@@ -64,6 +64,7 @@
     <Compile Include="GameObjects\Components\Items\ServerHandsComponent.cs"/>
     <Compile Include="GameObjects\Components\Items\InventoryComponent.cs"/>
     <Compile Include="GameObjects\Components\Items\ItemComponent.cs"/>
+    <Compile Include="GameObjects\Components\Mobs\ServerIntentComponent.cs"/>
     <Compile Include="GameObjects\Components\Damage\DamageableComponent.cs"/>
     <Compile Include="GameObjects\Components\Damage\DestructibleComponent.cs"/>
     <Compile Include="GameObjects\Components\Damage\ResistanceSet.cs"/>
