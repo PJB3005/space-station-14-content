@@ -7,9 +7,8 @@ using SS14.Client.Interfaces.Player;
 using SS14.Client.Interfaces.Resource;
 using SS14.Client.Interfaces.UserInterface;
 using SS14.Client.UserInterface.Controls;
-using SS14.Shared;
 using SS14.Shared.Interfaces.GameObjects;
-using SS14.Shared.IoC; 
+using SS14.Shared.IoC;
 using SS14.Shared.Maths;
 
 namespace Content.Client.UserInterface
@@ -32,6 +31,9 @@ namespace Content.Client.UserInterface
         {
             var _resMgr = IoCManager.Resolve<IResourceCache>();
             handSlot = _resMgr.GetSprite("hand");
+            // OnCalcRect() calculates position so this needs to be ran
+            // as it doesn't automatically get called by the UI manager.
+            DoLayout();
         }
 
         protected override void OnCalcRect()
@@ -40,11 +42,11 @@ namespace Content.Client.UserInterface
             var slotBounds = handSlot.LocalBounds;
             var width = (int)((slotBounds.Width * 2) + spacing);
             var height = (int)slotBounds.Height;
-           
+
             // Force size because refactoring is HARD.
             Size = new Vector2i(width, height);
             ClientArea = Box2i.FromDimensions(0, 0, Width, Height);
-            
+
             // Hell force position too what could go wrong!
             Position = new Vector2i((int)(CluwneLib.Window.Viewport.Width - width) / 2, (int)CluwneLib.Window.Viewport.Height - height - 10);
             handL = Box2i.FromDimensions(Position.X, Position.Y, (int)slotBounds.Width, (int)slotBounds.Height);
