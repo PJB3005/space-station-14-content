@@ -1,7 +1,9 @@
 ﻿using Content.Client.GameObjects;
 using Content.Client.GameObjects.Components.Power;
 using Content.Client.GameObjects.Components.Storage;
+using Content.Client.Graphics;
 using Content.Client.Interfaces.GameObjects;
+using SS14.Client.Interfaces.Graphics.Overlays;
 using SS14.Shared.ContentPack;
 using SS14.Shared.Interfaces.GameObjects;
 using SS14.Shared.IoC;
@@ -45,6 +47,8 @@ namespace Content.Client
             factory.Register<ClientStorageComponent>();
             factory.Register<ClientInventoryComponent>();
             factory.Register<PowerDebugTool>();
+
+            IoCManager.Resolve<IOverlayManager>().AddOverlay(new Parallax());
         }
     }
 }
