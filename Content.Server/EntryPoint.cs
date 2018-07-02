@@ -36,9 +36,9 @@ namespace Content.Server
         private bool _countdownStarted;
 
         /// <inheritdoc />
-        public override void Init()
+        public override void PreInit()
         {
-            base.Init();
+            base.PreInit();
 
             _server = IoCManager.Resolve<IBaseServer>();
             _players = IoCManager.Resolve<IPlayerManager>();

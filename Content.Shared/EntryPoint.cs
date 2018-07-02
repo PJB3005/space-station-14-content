@@ -6,7 +6,7 @@ namespace Content.Shared
 {
     public class EntryPoint : GameShared
     {
-        public override void Init()
+        public override void PreInit()
         {
 #if DEBUG
             var resm = IoCManager.Resolve<IResourceManager>();

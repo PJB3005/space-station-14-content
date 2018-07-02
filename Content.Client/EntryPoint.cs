@@ -12,7 +12,7 @@ namespace Content.Client
 {
     public class EntryPoint : GameClient
     {
-        public override void Init()
+        public override void PreInit()
         {
             var factory = IoCManager.Resolve<IComponentFactory>();
 
@@ -47,6 +47,11 @@ namespace Content.Client
             factory.Register<ClientStorageComponent>();
             factory.Register<ClientInventoryComponent>();
             factory.Register<PowerDebugTool>();
+        }
+
+        public override void PostInit()
+        {
+            base.PostInit();
 
             IoCManager.Resolve<IOverlayManager>().AddOverlay(new Parallax());
         }
