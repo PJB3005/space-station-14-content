@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Content.Shared</RootNamespace>
+        <LangVersion>7.2</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\engine\SS14.Shared.Maths.Standard\SS14.Shared.Maths.Standard.csproj" />
+      <ProjectReference Include="..\engine\SS14.Shared.Standard\SS14.Shared.Standard.csproj" />
+    </ItemGroup>
+
+</Project>

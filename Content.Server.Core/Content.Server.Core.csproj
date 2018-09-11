@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <RootNamespace>Content.Server</RootNamespace>
+        <LangVersion>7.2</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Content.Shared.Standard\Content.Shared.Standard.csproj" />
+      <ProjectReference Include="..\engine\SS14.Server.Core\SS14.Server.Core.csproj" />
+      <ProjectReference Include="..\engine\SS14.Shared.Maths.Standard\SS14.Shared.Maths.Standard.csproj" />
+      <ProjectReference Include="..\engine\SS14.Shared.Standard\SS14.Shared.Standard.csproj" />
+    </ItemGroup>
+
+</Project>
