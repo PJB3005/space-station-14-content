@@ -5,6 +5,7 @@ using NUnit.Framework;
 using Robust.Client.GameObjects;
 using Robust.Server.Interfaces.Player;
 using Robust.Shared.GameObjects;
+using Robust.Shared.GameObjects.Components.Containers;
 using Robust.Shared.Interfaces.GameObjects;
 using Robust.Shared.Interfaces.Map;
 using Robust.Shared.IoC;
@@ -38,7 +39,11 @@ namespace Content.IntegrationTests.Tests
 
         private async Task<(ClientIntegrationInstance c, ServerIntegrationInstance s)> Start()
         {
-            var optsServer = new ServerIntegrationOptions {ExtraPrototypes = ExtraPrototypes};
+            var optsServer = new ServerIntegrationOptions
+            {
+                ExtraPrototypes = ExtraPrototypes,
+                CVarOverrides = {{"net.pvs", "false"}}
+            };
             var optsClient = new ClientIntegrationOptions {ExtraPrototypes = ExtraPrototypes};
 
             var (c, s) = await StartConnectedServerDummyTickerClientPair(optsClient, optsServer);
@@ -147,6 +152,56 @@ namespace Content.IntegrationTests.Tests
                 var light = dummy.GetComponent<PointLightComponent>();
                 Assert.True(sprite.ContainerOccluded);
                 Assert.True(light.ContainerOccluded);
+            });
+
+            await Task.WhenAll(c.WaitIdleAsync(), s.WaitIdleAsync());
+        }
+
+        [Test]
+        public async Task TestRemoveBeforeDelete()
+        {
+            var (c, s) = await Start();
+
+            EntityUid dummyUid = default;
+            var basePos = new MapCoordinates(Vector2.Zero, new MapId(1));
+            s.Post(() =>
+            {
+                var ent = IoCManager.Resolve<IEntityManager>();
+                var container = ent.SpawnEntity("ContainerOcclusionA", basePos);
+                var dummy = ent.SpawnEntity("ContainerOcclusionDummy", basePos);
+                dummyUid = dummy.Uid;
+
+                container.GetComponent<EntityStorageComponent>().Insert(dummy);
+            });
+
+            await RunTicksSync(c, s, 5);
+
+            c.Assert(() =>
+            {
+                var dummy = IoCManager.Resolve<IEntityManager>().GetEntity(dummyUid);
+                var sprite = dummy.GetComponent<SpriteComponent>();
+                Assert.That(sprite.ContainerOccluded, Is.True);
+            });
+
+            s.Post(() =>
+            {
+                var ent = IoCManager.Resolve<IEntityManager>();
+                var dummy = ent.GetEntity(dummyUid);
+                var parent = dummy.Transform.Parent!.Owner;
+                var containerMgr = parent.GetComponent<ContainerManagerComponent>();
+                containerMgr.ForceRemove(dummy);
+                dummy.Transform.AttachToGridOrMap();
+
+                parent.Delete();
+            });
+
+            await RunTicksSync(c, s, 5);
+
+            c.Assert(() =>
+            {
+                var dummy = IoCManager.Resolve<IEntityManager>().GetEntity(dummyUid);
+                var sprite = dummy.GetComponent<SpriteComponent>();
+                Assert.That(sprite.ContainerOccluded, Is.False);
             });
 
             await Task.WhenAll(c.WaitIdleAsync(), s.WaitIdleAsync());

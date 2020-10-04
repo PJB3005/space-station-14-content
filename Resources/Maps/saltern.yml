@@ -457,7 +457,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 50
   type: Table
@@ -643,7 +643,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 69
   type: PowerCellRecharger
@@ -656,7 +656,7 @@ entities:
     type: Collidable
   - containers:
       PowerCellCharger-powerCellContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 70
   type: PlushieCarp
@@ -685,7 +685,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 73
   type: DrinkGoldenCup
@@ -1097,7 +1097,7 @@ entities:
     type: Collidable
   - containers:
       flashlight_cell_container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 116
   type: FlashlightLantern
@@ -1109,7 +1109,7 @@ entities:
     type: Collidable
   - containers:
       flashlight_cell_container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 117
   type: HatHardhatYellow
@@ -1184,7 +1184,7 @@ entities:
     type: Collidable
   - containers:
       stunbaton_cell_container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 125
   type: Stunbaton
@@ -1197,7 +1197,7 @@ entities:
     type: Collidable
   - containers:
       stunbaton_cell_container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 126
   type: PowerCellSmallStandard
@@ -1219,9 +1219,9 @@ entities:
       BatteryBarrel-powercell-container:
         entities:
         - 126
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       BatteryBarrel-ammo-container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 128
   type: PowerCellSmallStandard
@@ -1243,9 +1243,9 @@ entities:
       BatteryBarrel-powercell-container:
         entities:
         - 128
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       BatteryBarrel-ammo-container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 130
   type: Table
@@ -1300,7 +1300,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 135
   type: Poweredlight
@@ -1313,7 +1313,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 136
   type: Poweredlight
@@ -1327,7 +1327,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 137
   type: PlaqueAtmos
@@ -1374,7 +1374,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 141
   type: Poweredlight
@@ -1388,7 +1388,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 142
   type: SignRND
@@ -1446,7 +1446,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 147
   type: SignEVA
@@ -1588,7 +1588,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 161
   type: DisposalBend
@@ -1603,7 +1603,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 162
   type: DisposalPipe
@@ -1617,7 +1617,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 163
   type: ConveyorSwitch
@@ -1642,7 +1642,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 165
   type: DisposalJunction
@@ -1657,7 +1657,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 166
   type: DisposalJunction
@@ -1672,7 +1672,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 167
   type: DisposalJunctionFlipped
@@ -1687,7 +1687,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 168
   type: DisposalJunction
@@ -1702,7 +1702,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 169
   type: DisposalJunctionFlipped
@@ -1717,7 +1717,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 170
   type: DisposalJunctionFlipped
@@ -1732,7 +1732,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 171
   type: DisposalJunction
@@ -1747,7 +1747,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 172
   type: DisposalYJunction
@@ -1762,7 +1762,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 173
   type: DisposalJunctionFlipped
@@ -1776,7 +1776,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 174
   type: DisposalJunction
@@ -1791,7 +1791,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 175
   type: DisposalJunction
@@ -1806,7 +1806,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 176
   type: DisposalJunctionFlipped
@@ -1821,7 +1821,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 177
   type: DisposalJunctionFlipped
@@ -1836,7 +1836,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 178
   type: DisposalJunction
@@ -1851,7 +1851,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 179
   type: DisposalJunctionFlipped
@@ -1866,7 +1866,7 @@ entities:
     type: Breakable
   - containers:
       DisposalJunction:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 180
   type: DisposalPipe
@@ -1881,7 +1881,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 181
   type: DisposalPipe
@@ -1896,7 +1896,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 182
   type: DisposalPipe
@@ -1911,7 +1911,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 183
   type: DisposalPipe
@@ -1926,7 +1926,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 184
   type: DisposalTrunk
@@ -1941,7 +1941,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 185
   type: DisposalUnit
@@ -1958,7 +1958,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 186
   type: DisposalPipe
@@ -1972,7 +1972,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 187
   type: DisposalPipe
@@ -1987,7 +1987,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 188
   type: DisposalPipe
@@ -2002,7 +2002,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 189
   type: DisposalPipe
@@ -2017,7 +2017,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 190
   type: DisposalPipe
@@ -2032,7 +2032,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 191
   type: DisposalPipe
@@ -2047,7 +2047,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 192
   type: VendingMachineYouTool
@@ -2074,7 +2074,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 194
   type: DisposalBend
@@ -2089,7 +2089,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 195
   type: DisposalPipe
@@ -2104,7 +2104,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 196
   type: DisposalPipe
@@ -2118,7 +2118,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 197
   type: DisposalPipe
@@ -2132,7 +2132,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 198
   type: DisposalPipe
@@ -2146,7 +2146,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 199
   type: DisposalPipe
@@ -2160,7 +2160,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 200
   type: DisposalPipe
@@ -2174,7 +2174,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 201
   type: DisposalPipe
@@ -2188,7 +2188,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 202
   type: DisposalTrunk
@@ -2202,7 +2202,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 203
   type: DisposalUnit
@@ -2219,7 +2219,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 204
   type: DisposalPipe
@@ -2234,7 +2234,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 205
   type: DisposalPipe
@@ -2249,7 +2249,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 206
   type: DisposalPipe
@@ -2264,7 +2264,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 207
   type: DisposalTrunk
@@ -2279,7 +2279,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 208
   type: DisposalUnit
@@ -2296,7 +2296,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 209
   type: DisposalPipe
@@ -2311,7 +2311,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 210
   type: DisposalPipe
@@ -2326,7 +2326,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 211
   type: DisposalPipe
@@ -2341,7 +2341,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 212
   type: DisposalPipe
@@ -2356,7 +2356,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 213
   type: DisposalTrunk
@@ -2371,7 +2371,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 214
   type: DisposalUnit
@@ -2388,7 +2388,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 215
   type: DisposalPipe
@@ -2402,7 +2402,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 216
   type: DisposalPipe
@@ -2416,7 +2416,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 217
   type: DisposalPipe
@@ -2430,7 +2430,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 218
   type: DisposalPipe
@@ -2445,7 +2445,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 219
   type: Recycler
@@ -2466,7 +2466,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 221
   type: DisposalPipe
@@ -2481,7 +2481,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 222
   type: DisposalPipe
@@ -2496,7 +2496,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 223
   type: DisposalPipe
@@ -2511,7 +2511,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 224
   type: DisposalPipe
@@ -2526,7 +2526,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 225
   type: DisposalPipe
@@ -2541,7 +2541,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 226
   type: DisposalPipe
@@ -2556,7 +2556,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 227
   type: DisposalTrunk
@@ -2571,7 +2571,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 228
   type: DisposalUnit
@@ -2588,7 +2588,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 229
   type: DisposalPipe
@@ -2603,7 +2603,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 230
   type: DisposalPipe
@@ -2618,7 +2618,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 231
   type: DisposalPipe
@@ -2633,7 +2633,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 232
   type: DisposalPipe
@@ -2648,7 +2648,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 233
   type: DisposalPipe
@@ -2663,7 +2663,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 234
   type: DisposalPipe
@@ -2678,7 +2678,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 235
   type: DisposalPipe
@@ -2693,7 +2693,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 236
   type: DisposalBend
@@ -2708,7 +2708,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 237
   type: DisposalPipe
@@ -2723,7 +2723,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 238
   type: DisposalPipe
@@ -2738,7 +2738,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 239
   type: DisposalTrunk
@@ -2753,7 +2753,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 240
   type: DisposalUnit
@@ -2770,7 +2770,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 241
   type: DisposalBend
@@ -2785,7 +2785,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 242
   type: DisposalPipe
@@ -2800,7 +2800,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 243
   type: DisposalPipe
@@ -2815,7 +2815,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 244
   type: DisposalPipe
@@ -2830,7 +2830,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 245
   type: DisposalPipe
@@ -2845,7 +2845,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 246
   type: DisposalPipe
@@ -2860,7 +2860,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 247
   type: DisposalPipe
@@ -2875,7 +2875,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 248
   type: DisposalPipe
@@ -2890,7 +2890,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 249
   type: DisposalPipe
@@ -2905,7 +2905,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 250
   type: DisposalPipe
@@ -2920,7 +2920,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 251
   type: DisposalPipe
@@ -2935,7 +2935,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 252
   type: DisposalPipe
@@ -2950,7 +2950,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 253
   type: DisposalPipe
@@ -2965,7 +2965,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 254
   type: DisposalPipe
@@ -2979,7 +2979,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 255
   type: DisposalPipe
@@ -2994,7 +2994,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 256
   type: DisposalPipe
@@ -3009,7 +3009,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 257
   type: DisposalPipe
@@ -3024,7 +3024,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 258
   type: DisposalPipe
@@ -3039,7 +3039,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 259
   type: DisposalPipe
@@ -3054,7 +3054,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 260
   type: DisposalPipe
@@ -3069,7 +3069,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 261
   type: DisposalPipe
@@ -3084,7 +3084,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 262
   type: DisposalPipe
@@ -3099,7 +3099,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 263
   type: DisposalPipe
@@ -3114,7 +3114,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 264
   type: DisposalPipe
@@ -3129,7 +3129,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 265
   type: Window
@@ -3154,7 +3154,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 267
   type: DisposalPipe
@@ -3169,7 +3169,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 268
   type: DisposalPipe
@@ -3183,7 +3183,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 269
   type: DisposalPipe
@@ -3197,7 +3197,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 270
   type: DisposalPipe
@@ -3211,7 +3211,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 271
   type: DisposalPipe
@@ -3225,7 +3225,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 272
   type: DisposalTrunk
@@ -3239,7 +3239,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 273
   type: DisposalUnit
@@ -3256,7 +3256,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 274
   type: DisposalPipe
@@ -3270,7 +3270,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 275
   type: DisposalPipe
@@ -3285,7 +3285,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 276
   type: DisposalPipe
@@ -3300,7 +3300,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 277
   type: DisposalPipe
@@ -3315,7 +3315,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 278
   type: DisposalPipe
@@ -3330,7 +3330,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 279
   type: DisposalPipe
@@ -3345,7 +3345,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 280
   type: DisposalPipe
@@ -3360,7 +3360,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 281
   type: DisposalPipe
@@ -3375,7 +3375,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 282
   type: DisposalPipe
@@ -3390,7 +3390,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 283
   type: DisposalPipe
@@ -3405,7 +3405,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 284
   type: DisposalPipe
@@ -3420,7 +3420,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 285
   type: DisposalPipe
@@ -3435,7 +3435,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 286
   type: DisposalPipe
@@ -3450,7 +3450,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 287
   type: DisposalPipe
@@ -3465,7 +3465,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 288
   type: DisposalBend
@@ -3480,7 +3480,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 289
   type: DisposalPipe
@@ -3495,7 +3495,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 290
   type: DisposalPipe
@@ -3510,7 +3510,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 291
   type: DisposalPipe
@@ -3525,7 +3525,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 292
   type: DisposalPipe
@@ -3540,7 +3540,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 293
   type: DisposalPipe
@@ -3555,7 +3555,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 294
   type: DisposalPipe
@@ -3570,7 +3570,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 295
   type: DisposalPipe
@@ -3585,7 +3585,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 296
   type: DisposalTrunk
@@ -3600,7 +3600,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 297
   type: DisposalUnit
@@ -3617,7 +3617,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 298
   type: DisposalPipe
@@ -3631,7 +3631,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 299
   type: DisposalPipe
@@ -3646,7 +3646,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 300
   type: DisposalPipe
@@ -3661,7 +3661,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 301
   type: DisposalPipe
@@ -3676,7 +3676,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 302
   type: ConveyorBelt
@@ -3697,7 +3697,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 304
   type: DisposalUnit
@@ -3714,7 +3714,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 305
   type: Window
@@ -3749,7 +3749,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 308
   type: DisposalPipe
@@ -3764,7 +3764,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 309
   type: DisposalPipe
@@ -3779,7 +3779,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 310
   type: DisposalPipe
@@ -3794,7 +3794,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 311
   type: DisposalPipe
@@ -3809,7 +3809,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 312
   type: DisposalPipe
@@ -3824,7 +3824,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 313
   type: DisposalPipe
@@ -3839,7 +3839,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 314
   type: DisposalPipe
@@ -3854,7 +3854,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 315
   type: DisposalPipe
@@ -3869,7 +3869,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 316
   type: DisposalPipe
@@ -3884,7 +3884,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 317
   type: DisposalPipe
@@ -3899,7 +3899,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 318
   type: DisposalPipe
@@ -3914,7 +3914,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 319
   type: DisposalPipe
@@ -3929,7 +3929,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 320
   type: DisposalPipe
@@ -3944,7 +3944,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 321
   type: DisposalPipe
@@ -3959,7 +3959,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 322
   type: DisposalPipe
@@ -3974,7 +3974,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 323
   type: DisposalPipe
@@ -3989,7 +3989,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 324
   type: DisposalPipe
@@ -4004,7 +4004,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 325
   type: DisposalPipe
@@ -4019,7 +4019,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 326
   type: DisposalPipe
@@ -4034,7 +4034,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 327
   type: DisposalPipe
@@ -4049,7 +4049,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 328
   type: DisposalPipe
@@ -4064,7 +4064,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 329
   type: DisposalPipe
@@ -4079,7 +4079,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 330
   type: DisposalPipe
@@ -4094,7 +4094,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 331
   type: DisposalPipe
@@ -4109,7 +4109,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 332
   type: DisposalPipe
@@ -4124,7 +4124,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 333
   type: DisposalPipe
@@ -4139,7 +4139,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 334
   type: DisposalPipe
@@ -4154,7 +4154,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 335
   type: DisposalPipe
@@ -4168,7 +4168,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 336
   type: DisposalTrunk
@@ -4183,7 +4183,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 337
   type: DisposalUnit
@@ -4200,7 +4200,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 338
   type: DisposalPipe
@@ -4215,7 +4215,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 339
   type: DisposalTrunk
@@ -4230,7 +4230,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 340
   type: DisposalPipe
@@ -4244,7 +4244,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 341
   type: DisposalPipe
@@ -4259,7 +4259,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 342
   type: DisposalTrunk
@@ -4274,7 +4274,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 343
   type: DisposalPipe
@@ -4288,7 +4288,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 344
   type: DisposalPipe
@@ -4303,7 +4303,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 345
   type: DisposalPipe
@@ -4318,7 +4318,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 346
   type: DisposalBend
@@ -4332,7 +4332,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 347
   type: DisposalPipe
@@ -4347,7 +4347,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 348
   type: DisposalPipe
@@ -4362,7 +4362,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 349
   type: DisposalTrunk
@@ -4377,7 +4377,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 350
   type: DisposalBend
@@ -4392,7 +4392,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 351
   type: DisposalPipe
@@ -4407,7 +4407,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 352
   type: DisposalPipe
@@ -4422,7 +4422,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 353
   type: DisposalPipe
@@ -4437,7 +4437,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 354
   type: DisposalPipe
@@ -4452,7 +4452,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 355
   type: DisposalPipe
@@ -4467,7 +4467,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 356
   type: DisposalPipe
@@ -4482,7 +4482,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 357
   type: DisposalPipe
@@ -4497,7 +4497,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 358
   type: DisposalPipe
@@ -4512,7 +4512,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 359
   type: DisposalPipe
@@ -4527,7 +4527,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 360
   type: DisposalPipe
@@ -4542,7 +4542,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 361
   type: DisposalPipe
@@ -4557,7 +4557,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 362
   type: DisposalPipe
@@ -4572,7 +4572,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 363
   type: DisposalPipe
@@ -4587,7 +4587,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 364
   type: DisposalPipe
@@ -4602,7 +4602,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 365
   type: DisposalUnit
@@ -4619,7 +4619,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 366
   type: DisposalPipe
@@ -4634,7 +4634,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 367
   type: DisposalPipe
@@ -4649,7 +4649,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 368
   type: DisposalPipe
@@ -4664,7 +4664,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 369
   type: DisposalPipe
@@ -4679,7 +4679,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 370
   type: DisposalPipe
@@ -4694,7 +4694,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 371
   type: DisposalPipe
@@ -4709,7 +4709,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 372
   type: DisposalPipe
@@ -4724,7 +4724,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 373
   type: DisposalPipe
@@ -4739,7 +4739,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 374
   type: DisposalPipe
@@ -4754,7 +4754,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 375
   type: DisposalUnit
@@ -4771,7 +4771,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 376
   type: DisposalPipe
@@ -4786,7 +4786,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 377
   type: DisposalPipe
@@ -4801,7 +4801,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 378
   type: DisposalPipe
@@ -4816,7 +4816,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 379
   type: DisposalPipe
@@ -4831,7 +4831,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 380
   type: DisposalPipe
@@ -4846,7 +4846,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 381
   type: DisposalPipe
@@ -4861,7 +4861,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 382
   type: DisposalPipe
@@ -4876,7 +4876,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 383
   type: DisposalPipe
@@ -4891,7 +4891,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 384
   type: DisposalPipe
@@ -4906,7 +4906,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 385
   type: DisposalPipe
@@ -4921,7 +4921,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 386
   type: DisposalPipe
@@ -4936,7 +4936,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 387
   type: DisposalPipe
@@ -4951,7 +4951,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 388
   type: DisposalPipe
@@ -4966,7 +4966,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 389
   type: DisposalPipe
@@ -4981,7 +4981,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 390
   type: DisposalPipe
@@ -4996,7 +4996,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 391
   type: DisposalPipe
@@ -5011,7 +5011,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 392
   type: DisposalPipe
@@ -5026,7 +5026,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 393
   type: DisposalPipe
@@ -5041,7 +5041,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 394
   type: DisposalPipe
@@ -5056,7 +5056,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 395
   type: DisposalPipe
@@ -5071,7 +5071,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 396
   type: DisposalPipe
@@ -5086,7 +5086,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 397
   type: DisposalPipe
@@ -5101,7 +5101,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 398
   type: DisposalBend
@@ -5116,7 +5116,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 399
   type: DisposalPipe
@@ -5131,7 +5131,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 400
   type: DisposalPipe
@@ -5146,7 +5146,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 401
   type: DisposalPipe
@@ -5161,7 +5161,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 402
   type: DisposalPipe
@@ -5176,7 +5176,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 403
   type: DisposalUnit
@@ -5193,7 +5193,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 404
   type: DisposalPipe
@@ -5208,7 +5208,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 405
   type: DisposalPipe
@@ -5223,7 +5223,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 406
   type: DisposalPipe
@@ -5238,7 +5238,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 407
   type: DisposalUnit
@@ -5255,7 +5255,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 408
   type: AirlockMaintCommon
@@ -5980,7 +5980,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 505
   type: TrashSpawner
@@ -6071,7 +6071,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 517
   type: Poweredlight
@@ -6085,7 +6085,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 518
   type: Poweredlight
@@ -6099,7 +6099,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 519
   type: Catwalk
@@ -6437,7 +6437,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 561
   type: Poweredlight
@@ -6455,7 +6455,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 562
   type: Poweredlight
@@ -6472,7 +6472,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 563
   type: AirlockCommandGlassLocked
@@ -7714,7 +7714,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 667
   type: Table
@@ -7748,7 +7748,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 670
   type: LowWall
@@ -8450,7 +8450,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 747
   type: ReinforcedWindow
@@ -8471,7 +8471,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 749
   type: PottedPlantRandomPlastic
@@ -8482,7 +8482,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 750
   type: PottedPlantRandom
@@ -8493,7 +8493,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 751
   type: LowWall
@@ -8574,7 +8574,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 759
   type: LowWall
@@ -8622,7 +8622,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 763
   type: PottedPlantRandom
@@ -8633,7 +8633,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 764
   type: LockerEmergencyFilledRandom
@@ -8651,7 +8651,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 765
   type: PottedPlantRandom
@@ -8662,7 +8662,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 766
   type: LockerEmergencyFilledRandom
@@ -8680,7 +8680,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 767
   type: LockerEmergencyFilledRandom
@@ -8698,7 +8698,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 768
   type: PottedPlantRandom
@@ -8709,7 +8709,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 769
   type: PottedPlantRandom
@@ -8720,7 +8720,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 770
   type: LockerEmergencyFilledRandom
@@ -8738,7 +8738,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 771
   type: LockerEmergencyFilledRandom
@@ -8756,7 +8756,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 772
   type: LockerEmergencyFilledRandom
@@ -8774,7 +8774,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 773
   type: PottedPlantRD
@@ -8785,7 +8785,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 774
   type: LockerEmergencyFilledRandom
@@ -8803,7 +8803,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 775
   type: PottedPlantRandom
@@ -8814,7 +8814,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 776
   type: PottedPlantRandom
@@ -8825,7 +8825,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 777
   type: LockerFireFilled
@@ -8843,7 +8843,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 778
   type: LockerFireFilled
@@ -8861,7 +8861,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 779
   type: LockerBombFilled
@@ -8879,7 +8879,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 780
   type: LockerBombFilled
@@ -8897,7 +8897,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 781
   type: LockerFireFilled
@@ -8915,7 +8915,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 782
   type: LockerEmergencyFilledRandom
@@ -8933,7 +8933,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 783
   type: LockerFireFilled
@@ -8951,7 +8951,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 784
   type: LockerEmergencyFilledRandom
@@ -8969,7 +8969,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 785
   type: LockerFireFilled
@@ -8987,7 +8987,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 786
   type: LockerFireFilled
@@ -9005,7 +9005,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 787
   type: LockerEmergencyFilledRandom
@@ -9023,7 +9023,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 788
   type: LockerFireFilled
@@ -9041,7 +9041,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 789
   type: LockerEmergencyFilledRandom
@@ -9059,7 +9059,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 790
   type: LockerEmergencyFilledRandom
@@ -9077,7 +9077,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 791
   type: LockerEmergencyFilledRandom
@@ -9095,7 +9095,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 792
   type: LockerEmergencyFilledRandom
@@ -9113,7 +9113,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 793
   type: LockerFireFilled
@@ -9131,7 +9131,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 794
   type: LockerEmergencyFilledRandom
@@ -9149,7 +9149,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 795
   type: LockerEmergencyFilledRandom
@@ -9167,7 +9167,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 796
   type: LockerEmergencyFilledRandom
@@ -9185,7 +9185,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 797
   type: LockerEmergencyFilledRandom
@@ -9203,7 +9203,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 798
   type: LockerCaptainFilled
@@ -9221,7 +9221,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 799
   type: WardrobeCargoFilled
@@ -9239,7 +9239,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 800
   type: PottedPlantRandom
@@ -9250,7 +9250,7 @@ entities:
     type: Transform
   - containers:
       potted_plant_hide:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 801
   type: WardrobePrisonFilled
@@ -9268,7 +9268,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 802
   type: LockerL3JanitorFilled
@@ -9286,7 +9286,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 803
   type: LockerJanitorFilled
@@ -9304,7 +9304,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 804
   type: LockerChefFilled
@@ -9322,7 +9322,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 805
   type: WardrobeWhiteFilled
@@ -9340,7 +9340,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 806
   type: LockerMedicineFilled
@@ -9358,7 +9358,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 807
   type: LockerL3VirologyFilled
@@ -9376,7 +9376,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 808
   type: LockerSecurityFilled
@@ -9394,7 +9394,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 809
   type: LockerSecurityFilled
@@ -9412,7 +9412,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 810
   type: LockerSecurityFilled
@@ -9430,7 +9430,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 811
   type: WardrobeMedicalDoctorFilled
@@ -9448,7 +9448,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 812
   type: LockerL3SecurityFilled
@@ -9466,7 +9466,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 813
   type: LockerChiefMedicalOfficerFilled
@@ -9484,7 +9484,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 814
   type: WardrobeBlackFilled
@@ -9502,7 +9502,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 815
   type: LockerHeadOfPersonnelFilled
@@ -9520,7 +9520,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 816
   type: LowWall
@@ -9548,7 +9548,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 818
   type: WardrobeAtmosphericsFilled
@@ -9566,7 +9566,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 819
   type: LockerAtmosphericsFilled
@@ -9584,7 +9584,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 820
   type: LockerAtmosphericsFilled
@@ -9602,7 +9602,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 821
   type: LockerChiefEngineerFilled
@@ -9620,7 +9620,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 822
   type: LockerEngineerFilled
@@ -9638,7 +9638,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 823
   type: LockerEngineerFilled
@@ -9656,7 +9656,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 824
   type: LockerResearchDirectorFilled
@@ -9674,7 +9674,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 825
   type: WardrobeScienceFilled
@@ -9692,7 +9692,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 826
   type: LockerL3JanitorFilled
@@ -9710,7 +9710,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 827
   type: LockerGeneric
@@ -9728,7 +9728,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 828
   type: WardrobeGreyFilled
@@ -9746,7 +9746,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 829
   type: WardrobePajamaFilled
@@ -9764,7 +9764,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 830
   type: Catwalk
@@ -9863,7 +9863,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 843
   type: DisposalBend
@@ -9878,7 +9878,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 844
   type: DisposalBend
@@ -9893,7 +9893,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 845
   type: DisposalBend
@@ -9907,7 +9907,7 @@ entities:
     type: Breakable
   - containers:
       DisposalBend:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 846
   type: DisposalPipe
@@ -9922,7 +9922,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 847
   type: DisposalPipe
@@ -9937,7 +9937,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 848
   type: DisposalTrunk
@@ -9952,7 +9952,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 849
   type: DisposalUnit
@@ -9969,7 +9969,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 850
   type: DisposalPipe
@@ -9984,7 +9984,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 851
   type: DisposalPipe
@@ -9998,7 +9998,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 852
   type: DisposalPipe
@@ -10012,7 +10012,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 853
   type: DisposalPipe
@@ -10026,7 +10026,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 854
   type: DisposalPipe
@@ -10040,7 +10040,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 855
   type: DisposalPipe
@@ -10054,7 +10054,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 856
   type: DisposalPipe
@@ -10069,7 +10069,7 @@ entities:
     type: Breakable
   - containers:
       DisposalTransit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 857
   components:
@@ -21009,7 +21009,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 862
   type: Poweredlight
@@ -21024,7 +21024,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 863
   type: LowWall
@@ -21372,7 +21372,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 897
   type: Poweredlight
@@ -21390,7 +21390,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 898
   type: Poweredlight
@@ -21408,7 +21408,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 899
   type: KitchenMicrowave
@@ -21419,7 +21419,7 @@ entities:
     type: Transform
   - containers:
       microwave_entity_container:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 900
   type: Table
@@ -22216,9 +22216,9 @@ entities:
     type: Transform
   - containers:
       IdCardConsole-privilegedId:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       IdCardConsole-targetId:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 980
   type: ComputerId
@@ -22229,9 +22229,9 @@ entities:
     type: Transform
   - containers:
       IdCardConsole-privilegedId:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       IdCardConsole-targetId:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 981
   type: Table
@@ -22843,7 +22843,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1043
   type: SpawnPointSecurityOfficer
@@ -23079,7 +23079,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1065
   type: ComputerResearchAndDevelopment
@@ -23124,7 +23124,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1069
   type: Poweredlight
@@ -23142,7 +23142,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1070
   type: Poweredlight
@@ -23159,7 +23159,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1071
   type: Poweredlight
@@ -23174,7 +23174,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1072
   type: ResearchAndDevelopmentServer
@@ -23199,7 +23199,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1074
   type: Poweredlight
@@ -23217,7 +23217,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1075
   type: Poweredlight
@@ -23235,7 +23235,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1076
   type: Poweredlight
@@ -23253,7 +23253,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1077
   type: Poweredlight
@@ -23271,7 +23271,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1078
   type: Poweredlight
@@ -23289,7 +23289,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1079
   type: Poweredlight
@@ -23306,7 +23306,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1080
   type: Poweredlight
@@ -23324,7 +23324,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1081
   type: ReinforcedWindow
@@ -23548,7 +23548,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1104
   type: ChairOfficeLight
@@ -23630,7 +23630,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1112
   type: DisposalUnit
@@ -23646,7 +23646,7 @@ entities:
     type: Destructible
   - containers:
       DisposalUnit:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1113
   type: Medkit
@@ -23659,7 +23659,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1114
   type: Medkit
@@ -23672,7 +23672,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1115
   type: Medkit
@@ -23685,7 +23685,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1116
   type: Catwalk
@@ -23789,7 +23789,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1130
   type: Poweredlight
@@ -23807,7 +23807,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1131
   type: Poweredlight
@@ -23825,7 +23825,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1132
   type: Poweredlight
@@ -23842,7 +23842,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1133
   type: Poweredlight
@@ -23860,7 +23860,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1134
   type: Window
@@ -23934,7 +23934,7 @@ entities:
     type: Destructible
   - containers:
       MedicalScanner-bodyContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1141
   type: LowWall
@@ -23968,7 +23968,7 @@ entities:
     type: Destructible
   - containers:
       MedicalScanner-bodyContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1144
   type: Beaker
@@ -24076,7 +24076,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1155
   type: Table
@@ -24144,7 +24144,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1161
   type: Catwalk
@@ -24169,7 +24169,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1163
   type: WarpPoint
@@ -24242,7 +24242,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1170
   type: LockerElectricalSupplies
@@ -24260,7 +24260,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1171
   type: Catwalk
@@ -24319,7 +24319,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1176
   type: Table
@@ -24360,7 +24360,7 @@ entities:
     type: Transform
   - containers:
       ChemMaster-reagentContainerContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1180
   type: Table
@@ -24401,7 +24401,7 @@ entities:
     type: Transform
   - containers:
       ReagentDispenser-reagentContainerContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1184
   type: ComputerMedicalRecords
@@ -24542,7 +24542,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1198
   type: EmergencyLight
@@ -24569,7 +24569,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1200
   type: SignShipDock
@@ -24638,7 +24638,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1206
   type: PoweredSmallLight
@@ -24656,7 +24656,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1207
   type: Table
@@ -24694,7 +24694,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1210
   type: PoweredSmallLight
@@ -24711,7 +24711,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1211
   type: Pen
@@ -24750,7 +24750,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1214
   type: Table
@@ -24822,7 +24822,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1220
   type: PoweredSmallLight
@@ -24840,7 +24840,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1221
   type: Poweredlight
@@ -24856,7 +24856,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1222
   type: Poweredlight
@@ -24873,7 +24873,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1223
   type: CrowbarRed
@@ -24899,7 +24899,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1225
   type: Poweredlight
@@ -24917,7 +24917,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1226
   type: Poweredlight
@@ -24935,7 +24935,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1227
   type: Poweredlight
@@ -24953,7 +24953,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1228
   type: Poweredlight
@@ -24971,7 +24971,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1229
   type: LockerWeldingSupplies
@@ -24989,7 +24989,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1230
   type: Welder
@@ -25022,7 +25022,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1233
   type: Multitool
@@ -25049,7 +25049,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1235
   type: Poweredlight
@@ -25066,7 +25066,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1236
   type: PoweredSmallLight
@@ -25083,7 +25083,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1237
   type: Table
@@ -25121,7 +25121,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1240
   type: PoweredSmallLight
@@ -25138,7 +25138,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1241
   type: PoweredSmallLight
@@ -25155,7 +25155,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1242
   type: LockerToolFilled
@@ -25173,7 +25173,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1243
   type: Poweredlight
@@ -25191,7 +25191,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1244
   type: VendingMachineCola
@@ -25249,7 +25249,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1249
   type: Poweredlight
@@ -25265,7 +25265,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1250
   type: Table
@@ -25394,7 +25394,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1262
   type: PoweredSmallLight
@@ -25412,7 +25412,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1263
   type: PoweredSmallLight
@@ -25430,7 +25430,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1264
   type: PoweredSmallLight
@@ -25448,7 +25448,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1265
   type: PoweredSmallLight
@@ -25466,7 +25466,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1266
   type: Paper
@@ -25490,7 +25490,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1268
   type: Poweredlight
@@ -25508,7 +25508,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1269
   type: Poweredlight
@@ -25526,7 +25526,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1270
   type: Poweredlight
@@ -25544,7 +25544,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1271
   type: solid_wall
@@ -25597,7 +25597,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1276
   type: Poweredlight
@@ -25615,7 +25615,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1277
   type: Poweredlight
@@ -25632,7 +25632,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1278
   type: Poweredlight
@@ -25649,7 +25649,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1279
   type: SignDirectionalSci
@@ -25677,7 +25677,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1281
   type: Poweredlight
@@ -25694,7 +25694,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1282
   type: Poweredlight
@@ -25712,7 +25712,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1283
   type: PoweredSmallLight
@@ -25728,7 +25728,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1284
   type: PoweredSmallLight
@@ -25746,7 +25746,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1285
   type: Poweredlight
@@ -25764,7 +25764,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1286
   type: Poweredlight
@@ -25779,7 +25779,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1287
   type: Poweredlight
@@ -25793,7 +25793,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1288
   type: Poweredlight
@@ -25811,7 +25811,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1289
   type: Poweredlight
@@ -25825,7 +25825,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1290
   type: Poweredlight
@@ -25840,7 +25840,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1291
   type: Poweredlight
@@ -25858,7 +25858,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1292
   type: solid_wall
@@ -25906,7 +25906,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1296
   type: AirlockMaintCommonLocked
@@ -25934,7 +25934,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1298
   type: Poweredlight
@@ -25951,7 +25951,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1299
   type: Poweredlight
@@ -25967,7 +25967,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1300
   type: Poweredlight
@@ -25982,7 +25982,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1301
   type: Poweredlight
@@ -26000,7 +26000,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1302
   type: Poweredlight
@@ -26018,7 +26018,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1303
   type: Poweredlight
@@ -26036,7 +26036,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1304
   type: Poweredlight
@@ -26054,7 +26054,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1305
   type: Poweredlight
@@ -26071,7 +26071,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1306
   type: Poweredlight
@@ -26089,7 +26089,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1307
   type: Poweredlight
@@ -26107,7 +26107,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1308
   type: Poweredlight
@@ -26125,7 +26125,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1309
   type: solid_wall
@@ -26163,7 +26163,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1312
   type: solid_wall
@@ -26218,7 +26218,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1317
   type: PoweredSmallLight
@@ -26235,7 +26235,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1318
   type: PoweredSmallLight
@@ -26253,7 +26253,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1319
   type: Poweredlight
@@ -26270,7 +26270,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1320
   type: Poweredlight
@@ -26288,7 +26288,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1321
   type: Poweredlight
@@ -26306,7 +26306,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1322
   type: Poweredlight
@@ -26324,7 +26324,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1323
   type: Poweredlight
@@ -26342,7 +26342,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1324
   type: Poweredlight
@@ -26358,7 +26358,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1325
   type: Poweredlight
@@ -26375,7 +26375,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1326
   type: Poweredlight
@@ -26393,7 +26393,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1327
   type: Poweredlight
@@ -26410,7 +26410,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1328
   type: Poweredlight
@@ -26425,7 +26425,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1329
   type: solid_wall
@@ -26463,7 +26463,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1332
   type: Poweredlight
@@ -26481,7 +26481,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1333
   type: Poweredlight
@@ -26499,7 +26499,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1334
   type: Poweredlight
@@ -26516,7 +26516,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1335
   type: SignCargo
@@ -26545,7 +26545,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1337
   type: solid_wall
@@ -26573,7 +26573,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1339
   type: SignDirectionalMed
@@ -26611,7 +26611,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1342
   type: Poweredlight
@@ -26629,7 +26629,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1343
   type: Poweredlight
@@ -26647,7 +26647,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1344
   type: Poweredlight
@@ -26664,7 +26664,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1345
   type: solid_wall
@@ -26726,7 +26726,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1350
   type: Poweredlight
@@ -26744,7 +26744,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1351
   type: Poweredlight
@@ -26762,7 +26762,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1352
   type: Poweredlight
@@ -26778,7 +26778,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1353
   type: Poweredlight
@@ -26796,7 +26796,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1354
   type: solid_wall
@@ -26824,7 +26824,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1356
   type: PoweredSmallLight
@@ -26842,7 +26842,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1357
   type: PoweredSmallLight
@@ -26860,7 +26860,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1358
   type: solid_wall
@@ -26919,7 +26919,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1363
   type: solid_wall
@@ -26957,7 +26957,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1366
   type: PoweredSmallLight
@@ -26974,7 +26974,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1367
   type: Catwalk
@@ -27029,7 +27029,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1373
   type: Window
@@ -27056,7 +27056,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1375
   type: PoweredSmallLight
@@ -27074,7 +27074,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1376
   type: PoweredSmallLight
@@ -27092,7 +27092,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1377
   type: PoweredSmallLight
@@ -27110,7 +27110,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1378
   type: PoweredSmallLight
@@ -27128,7 +27128,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1379
   type: Poweredlight
@@ -27146,7 +27146,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1380
   type: Poweredlight
@@ -27163,7 +27163,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1381
   type: Poweredlight
@@ -27181,7 +27181,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1382
   type: SignEngineering
@@ -27209,7 +27209,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1384
   type: Poweredlight
@@ -27227,7 +27227,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1385
   type: Poweredlight
@@ -27245,7 +27245,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1386
   type: Poweredlight
@@ -27262,7 +27262,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1387
   type: Poweredlight
@@ -27280,7 +27280,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1388
   type: solid_wall
@@ -27315,7 +27315,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1391
   type: Poweredlight
@@ -27331,7 +27331,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1392
   type: Poweredlight
@@ -27349,7 +27349,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1393
   type: PoweredSmallLight
@@ -27364,7 +27364,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1394
   type: PaintingMonkey
@@ -27402,7 +27402,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1397
   type: Poweredlight
@@ -27420,7 +27420,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1398
   type: Poweredlight
@@ -27437,7 +27437,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1399
   type: SignDirectionalEng
@@ -29288,7 +29288,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1584
   type: CrateGeneric
@@ -29306,7 +29306,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 1585
   type: Table
@@ -29723,7 +29723,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1631
   type: PoweredSmallLight
@@ -29741,7 +29741,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1632
   type: PoweredSmallLight
@@ -29759,7 +29759,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1633
   type: solid_wall
@@ -31950,7 +31950,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 1851
   type: solid_wall
@@ -37410,7 +37410,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 2396
   type: solid_wall
@@ -37825,7 +37825,7 @@ entities:
     type: Breakable
   - containers:
       DisposalEntry:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 2437
   type: VendingMachineSovietSoda
@@ -37919,7 +37919,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 2446
   type: VendingMachineCola
@@ -38445,7 +38445,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 2498
   type: CrateRadiation
@@ -38463,7 +38463,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 2499
   type: solid_wall
@@ -38755,7 +38755,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 2529
   type: SalternApc
@@ -53688,7 +53688,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 3891
   type: ApcExtensionCable
@@ -54085,7 +54085,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 3929
   type: PoweredSmallLight
@@ -54099,7 +54099,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 3930
   type: PoweredSmallLight
@@ -54113,7 +54113,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 3931
   type: PoweredSmallLight
@@ -54127,7 +54127,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 3932
   type: PoweredSmallLight
@@ -54141,7 +54141,7 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 3933
   type: SalternApc
@@ -54210,7 +54210,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 3939
   type: MetalStack
@@ -54341,7 +54341,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 3952
   type: Crowbar
@@ -54382,6 +54382,6 @@ entities:
     type: Destructible
   - containers:
       light_bulb:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 ...

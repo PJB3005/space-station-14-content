@@ -17,7 +17,6 @@ using Content.Shared.GameObjects.Verbs;
 using Content.Shared.Interfaces;
 using Content.Shared.Interfaces.GameObjects.Components;
 using Robust.Server.GameObjects;
-using Robust.Server.GameObjects.Components.Container;
 using Robust.Server.GameObjects.Components.UserInterface;
 using Robust.Server.GameObjects.EntitySystems;
 using Robust.Server.Interfaces.GameObjects;
@@ -25,6 +24,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 using Robust.Shared.GameObjects;
 using Robust.Shared.GameObjects.Components;
+using Robust.Shared.GameObjects.Components.Containers;
 using Robust.Shared.GameObjects.Components.Transform;
 using Robust.Shared.GameObjects.Systems;
 using Robust.Shared.Interfaces.GameObjects;
@@ -611,7 +611,7 @@ namespace Content.Server.GameObjects.Components.Disposal
                     break;
             }
         }
-    
+
         bool IsValidInteraction(ITargetedInteractEventArgs eventArgs)
         {
             if (!ActionBlockerSystem.CanInteract(eventArgs.User))
@@ -643,8 +643,8 @@ namespace Content.Server.GameObjects.Components.Disposal
             {
                 return false;
             }
-            // Duplicated code here, not sure how else to get actor inside to make UserInterface happy. 
-          
+            // Duplicated code here, not sure how else to get actor inside to make UserInterface happy.
+
             if (IsValidInteraction(eventArgs))
             {
                 UserInterface?.Open(actor.playerSession);

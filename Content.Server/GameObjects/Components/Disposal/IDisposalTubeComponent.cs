@@ -1,5 +1,5 @@
 ﻿#nullable enable
-using Robust.Server.GameObjects.Components.Container;
+using Robust.Shared.GameObjects.Components.Containers;
 using Robust.Shared.Interfaces.GameObjects;
 using Robust.Shared.Maths;
 

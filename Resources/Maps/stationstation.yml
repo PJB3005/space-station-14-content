@@ -138,7 +138,7 @@ entities:
       light_bulb:
         entities:
         - 2
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 4
   type: CableStack1
@@ -361,7 +361,7 @@ entities:
       light_bulb:
         entities:
         - 22
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 24
   type: Catwalk
@@ -393,7 +393,7 @@ entities:
       light_bulb:
         entities:
         - 25
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 27
   type: Poweredlight
@@ -410,7 +410,7 @@ entities:
       light_bulb:
         entities:
         - 28
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 28
   type: LightTube
@@ -441,7 +441,7 @@ entities:
       light_bulb:
         entities:
         - 29
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 31
   type: LightBulb
@@ -465,7 +465,7 @@ entities:
       light_bulb:
         entities:
         - 31
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 33
   type: LightTube
@@ -490,7 +490,7 @@ entities:
       light_bulb:
         entities:
         - 33
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 35
   type: LightTube
@@ -515,7 +515,7 @@ entities:
       light_bulb:
         entities:
         - 35
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 37
   type: Poweredlight
@@ -533,7 +533,7 @@ entities:
       light_bulb:
         entities:
         - 38
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 38
   type: LightTube
@@ -565,7 +565,7 @@ entities:
       light_bulb:
         entities:
         - 39
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 41
   type: LightTube
@@ -590,7 +590,7 @@ entities:
       light_bulb:
         entities:
         - 41
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 43
   type: Table
@@ -1639,7 +1639,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 148
   type: LockerMedical
@@ -1657,7 +1657,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 149
   type: LockerMedical
@@ -1675,7 +1675,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 150
   type: LockerMedical
@@ -1693,7 +1693,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 151
   type: CrateMedical
@@ -1711,7 +1711,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 152
   type: CrateMedical
@@ -1729,7 +1729,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 153
   type: Beaker
@@ -1926,7 +1926,7 @@ entities:
       light_bulb:
         entities:
         - 172
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 174
   type: ComputerMedicalRecords
@@ -1946,7 +1946,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 176
   type: MedkitFilled
@@ -1959,7 +1959,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 177
   type: VendingMachineWallMedical
@@ -2024,7 +2024,7 @@ entities:
       light_bulb:
         entities:
         - 181
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 183
   type: LightTube
@@ -2049,7 +2049,7 @@ entities:
       light_bulb:
         entities:
         - 183
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 185
   type: LightTube
@@ -2074,7 +2074,7 @@ entities:
       light_bulb:
         entities:
         - 185
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 187
   type: solid_wall
@@ -2139,7 +2139,7 @@ entities:
       light_bulb:
         entities:
         - 191
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 193
   type: LightTube
@@ -2164,7 +2164,7 @@ entities:
       light_bulb:
         entities:
         - 193
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 195
   type: LightTube
@@ -2188,7 +2188,7 @@ entities:
       light_bulb:
         entities:
         - 195
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 197
   type: solid_wall
@@ -2223,7 +2223,7 @@ entities:
       light_bulb:
         entities:
         - 198
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 200
   type: LightTube
@@ -2248,7 +2248,7 @@ entities:
       light_bulb:
         entities:
         - 200
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 202
   type: LightTube
@@ -2273,7 +2273,7 @@ entities:
       light_bulb:
         entities:
         - 202
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 204
   type: solid_wall
@@ -2341,7 +2341,7 @@ entities:
       light_bulb:
         entities:
         - 306
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 210
   type: solid_wall
@@ -2421,9 +2421,9 @@ entities:
       BatteryBarrel-powercell-container:
         entities:
         - 383
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       BatteryBarrel-ammo-container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 218
   type: LaserGun
@@ -2440,9 +2440,9 @@ entities:
       BatteryBarrel-powercell-container:
         entities:
         - 384
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       BatteryBarrel-ammo-container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 219
   type: Brutepack
@@ -2683,7 +2683,7 @@ entities:
       light_bulb:
         entities:
         - 246
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 243
   type: MetalStack
@@ -2720,7 +2720,7 @@ entities:
       light_bulb:
         entities:
         - 385
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 246
   type: LightBulb
@@ -3332,9 +3332,9 @@ entities:
     type: Destructible
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 308
   type: Table
@@ -3729,7 +3729,7 @@ entities:
     type: Collidable
   - containers:
       RangedMagazine-magazine:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 349
   type: MagazinePistolSmg
@@ -3740,7 +3740,7 @@ entities:
     type: Collidable
   - containers:
       RangedMagazine-magazine:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 350
   type: Multitool
@@ -3861,11 +3861,11 @@ entities:
     type: Destructible
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       Content.Server.GameObjects.Components.EntityStorageComponent149:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 363
   type: MedkitFilled
@@ -3878,7 +3878,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 364
   type: MedkitFilled
@@ -3891,7 +3891,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 365
   type: LockerGeneric
@@ -3909,11 +3909,11 @@ entities:
     type: Destructible
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       Content.Server.GameObjects.Components.EntityStorageComponent153:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 366
   type: FireExtinguisher
@@ -4480,7 +4480,7 @@ entities:
       light_bulb:
         entities:
         - 426
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 428
   type: ChairOfficeLight
@@ -4518,7 +4518,7 @@ entities:
       light_bulb:
         entities:
         - 531
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 431
   type: MetalStack
@@ -4602,7 +4602,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 439
   type: solid_wall
@@ -4849,7 +4849,7 @@ entities:
       light_bulb:
         entities:
         - 437
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 467
   type: solid_wall
@@ -4872,7 +4872,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 469
   type: ToolboxElectricalFilled
@@ -4885,7 +4885,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 470
   type: FlashlightLantern
@@ -4898,7 +4898,7 @@ entities:
     type: Collidable
   - containers:
       flashlight_cell_container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 471
   type: FlashlightLantern
@@ -4911,7 +4911,7 @@ entities:
     type: Collidable
   - containers:
       flashlight_cell_container:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 472
   type: Crowbar
@@ -4960,7 +4960,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 477
   type: UtilityBeltClothingFilled
@@ -4973,7 +4973,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 478
   type: MagazinePistolSmg
@@ -4986,9 +4986,9 @@ entities:
     type: Collidable
   - containers:
       magazine_bullet_container:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       RangedMagazine-magazine:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 479
   type: MagazinePistolSmg
@@ -5001,9 +5001,9 @@ entities:
     type: Collidable
   - containers:
       magazine_bullet_container:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       RangedMagazine-magazine:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 480
   type: MagazinePistolSmg
@@ -5016,9 +5016,9 @@ entities:
     type: Collidable
   - containers:
       magazine_bullet_container:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
       RangedMagazine-magazine:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 481
   type: BackpackClothing
@@ -5031,7 +5031,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 482
   type: BackpackClothing
@@ -5044,7 +5044,7 @@ entities:
     type: Collidable
   - containers:
       storagebase:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 483
   type: GlovesBlack
@@ -5068,15 +5068,15 @@ entities:
     type: Collidable
   - containers:
       ballistics_chamber_0:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       ballistic_gun_magazine:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       MagazineBarrel-chamber:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       MagazineBarrel-magazine:
         entities:
         - 348
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 485
   type: SmgC20r
@@ -5091,15 +5091,15 @@ entities:
     type: Collidable
   - containers:
       ballistics_chamber_0:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       ballistic_gun_magazine:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       MagazineBarrel-chamber:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
       MagazineBarrel-magazine:
         entities:
         - 349
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 486
   type: solid_wall
@@ -5277,7 +5277,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 503
   type: solid_wall
@@ -5580,7 +5580,7 @@ entities:
       light_bulb:
         entities:
         - 533
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 533
   type: LightTube
@@ -5605,7 +5605,7 @@ entities:
       light_bulb:
         entities:
         - 535
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 535
   type: LightTube
@@ -5636,7 +5636,7 @@ entities:
       light_bulb:
         entities:
         - 538
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 538
   type: LightBulb
@@ -6052,7 +6052,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 580
   type: LockerToolFilled
@@ -6070,7 +6070,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 581
   type: LockerToolFilled
@@ -6088,7 +6088,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 582
   type: LockerToolFilled
@@ -6106,7 +6106,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 583
   type: LockerToolFilled
@@ -6124,7 +6124,7 @@ entities:
     type: Destructible
   - containers:
       EntityStorageComponent:
-        type: Robust.Server.GameObjects.Components.Container.Container
+        type: Robust.Shared.GameObjects.Components.Containers.Container
     type: ContainerContainer
 - uid: 584
   type: GlassStack
@@ -6224,7 +6224,7 @@ entities:
       light_bulb:
         entities:
         - 590
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 590
   type: LightTube
@@ -6249,7 +6249,7 @@ entities:
       light_bulb:
         entities:
         - 592
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 592
   type: LightTube
@@ -6273,7 +6273,7 @@ entities:
       light_bulb:
         entities:
         - 594
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 594
   type: LightTube
@@ -6297,7 +6297,7 @@ entities:
       light_bulb:
         entities:
         - 596
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 596
   type: LightTube
@@ -6321,7 +6321,7 @@ entities:
       light_bulb:
         entities:
         - 598
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 598
   type: LightTube
@@ -6346,7 +6346,7 @@ entities:
       light_bulb:
         entities:
         - 600
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 600
   type: LightBulb
@@ -6423,7 +6423,7 @@ entities:
       light_bulb:
         entities:
         - 608
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 608
   type: LightTube
@@ -6830,7 +6830,7 @@ entities:
     type: Transform
   - containers:
       ReagentDispenser-reagentContainerContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 650
   type: Table
@@ -6918,7 +6918,7 @@ entities:
     type: Destructible
   - containers:
       MedicalScanner-bodyContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 659
   type: MedicalScanner
@@ -6932,7 +6932,7 @@ entities:
     type: Destructible
   - containers:
       MedicalScanner-bodyContainer:
-        type: Content.Server.GameObjects.ContainerSlot
+        type: Content.Shared.GameObjects.ContainerSlot
     type: ContainerContainer
 - uid: 660
   type: Table

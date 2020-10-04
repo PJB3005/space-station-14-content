@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Robust.Server.GameObjects.Components.Container;
+using Robust.Shared.GameObjects.Components.Containers;
 using Robust.Shared.Interfaces.GameObjects;
 using Robust.Shared.Interfaces.GameObjects.Components;
 using Robust.Shared.ViewVariables;
 
-namespace Content.Server.GameObjects
+namespace Content.Shared.GameObjects
 {
     public class ContainerSlot : BaseContainer
     {

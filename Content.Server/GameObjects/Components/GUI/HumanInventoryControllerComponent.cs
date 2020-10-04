@@ -1,6 +1,6 @@
 using Content.Server.GameObjects.Components.Items.Storage;
-using Robust.Server.GameObjects.Components.Container;
 using Robust.Shared.GameObjects;
+using Robust.Shared.GameObjects.Components.Containers;
 using Robust.Shared.Interfaces.GameObjects;
 using Robust.Shared.Localization;
 using Robust.Shared.Timers;
