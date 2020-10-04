@@ -50,8 +50,6 @@ namespace Content.Server.GameObjects.EntitySystems.Click
                     new PointerInputCmdHandler(HandleClientUseItemInHand))
                 .Bind(ContentKeyFunctions.WideAttack,
                     new PointerInputCmdHandler(HandleWideAttack))
-                .Bind(ContentKeyFunctions.ActivateItemInWorld,
-                    new PointerInputCmdHandler(HandleActivateItemInWorld))
                 .Bind(ContentKeyFunctions.TryPullObject, new PointerInputCmdHandler(HandleTryPullObject))
                 .Register<InteractionSystem>();
         }
@@ -94,27 +92,6 @@ namespace Content.Server.GameObjects.EntitySystems.Click
             }
         }
 
-        private bool HandleActivateItemInWorld(ICommonSession session, EntityCoordinates coords, EntityUid uid)
-        {
-            if (!EntityManager.TryGetEntity(uid, out var used))
-                return false;
-
-            var playerEnt = ((IPlayerSession) session).AttachedEntity;
-
-            if (playerEnt == null || !playerEnt.IsValid())
-            {
-                return false;
-            }
-
-            if (!playerEnt.Transform.Coordinates.InRange(EntityManager, used.Transform.Coordinates, InteractionRange))
-            {
-                return false;
-            }
-
-            InteractionActivate(playerEnt, used);
-            return true;
-        }
-
         /// <summary>
         /// Activates the Activate behavior of an object
         /// Verifies that the user is capable of doing the use interaction first
@@ -129,27 +106,6 @@ namespace Content.Server.GameObjects.EntitySystems.Click
             }
         }
 
-        private void InteractionActivate(IEntity user, IEntity used)
-        {
-            var activateMsg = new ActivateInWorldMessage(user, used);
-            RaiseLocalEvent(activateMsg);
-            if (activateMsg.Handled)
-            {
-                return;
-            }
-
-            if (!used.TryGetComponent(out IActivate activateComp))
-            {
-                return;
-            }
-
-            // all activates should only fire when in range / unbostructed
-            var activateEventArgs = new ActivateEventArgs { User = user, Target = used };
-            if (activateEventArgs.InRangeUnobstructed(ignoreInsideBlocker: true, popup: true))
-            {
-                activateComp.Activate(activateEventArgs);
-            }
-        }
 
         private bool HandleWideAttack(ICommonSession session, EntityCoordinates coords, EntityUid uid)
         {
