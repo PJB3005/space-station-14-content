@@ -1,0 +1,6 @@
+author: PJB
+changes:
+- type: Add
+  message: Changelog works!
+- type: Fix
+  message: Fixed the changelog script!
