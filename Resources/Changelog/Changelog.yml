@@ -7,3 +7,15 @@ Entries:
     type: Fix
   id: 1
   time: '2021-02-25T01:16:46.051845+00:00'
+- author: Evil PJB
+  changes:
+  - message: Added changelog
+    type: Add
+  - message: Fixed changelog
+    type: Fix
+  - message: Removed changelog
+    type: Remove
+  - message: Tweaked changelog
+    type: Tweak
+  id: 2
+  time: 2021-02-25 01:23:55+00:00
