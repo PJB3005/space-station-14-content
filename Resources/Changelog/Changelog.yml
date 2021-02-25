@@ -1,0 +1,9 @@
+Entries:
+- author: PJB
+  changes:
+  - message: Changelog works!
+    type: Add
+  - message: Fixed the changelog script!
+    type: Fix
+  id: 1
+  time: '2021-02-25T01:16:46.051845+00:00'
