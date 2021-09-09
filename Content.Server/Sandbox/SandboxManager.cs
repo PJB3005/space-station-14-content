@@ -9,7 +9,6 @@ using Content.Shared.Access;
 using Content.Shared.Sandbox;
 using Robust.Server.Console;
 using Robust.Server.GameObjects;
-using Robust.Server.Placement;
 using Robust.Server.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.GameObjects;
@@ -25,7 +24,6 @@ namespace Content.Server.Sandbox
     {
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IServerNetManager _netManager = default!;
-        [Dependency] private readonly IPlacementManager _placementManager = default!;
         [Dependency] private readonly IConGroupController _conGroupController = default!;
         [Dependency] private readonly IEntityManager _entityManager = default!;
         [Dependency] private readonly IServerConsoleHost _host = default!;
@@ -54,7 +52,7 @@ namespace Content.Server.Sandbox
             _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
             _entityManager.EventBus.SubscribeEvent<GameRunLevelChangedEvent>(EventSource.Local, this, GameTickerOnOnRunLevelChanged);
 
-            _placementManager.AllowPlacementFunc = placement =>
+            /*_placementManager.AllowPlacementFunc = placement =>
             {
                 if (IsSandboxEnabled)
                 {
@@ -70,7 +68,7 @@ namespace Content.Server.Sandbox
                 }
 
                 return false;
-            };
+            };*/
         }
 
         private void GameTickerOnOnRunLevelChanged(GameRunLevelChangedEvent obj)

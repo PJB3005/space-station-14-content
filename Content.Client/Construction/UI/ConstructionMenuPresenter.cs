@@ -7,7 +7,6 @@ using Content.Shared.Construction.Prototypes;
 using Content.Shared.Construction.Steps;
 using Content.Shared.Tool;
 using Robust.Client.Graphics;
-using Robust.Client.Placement;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.Utility;
@@ -29,7 +28,6 @@ namespace Content.Client.Construction.UI
         [Dependency] private readonly IEntitySystemManager _systemManager = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IResourceCache _resourceCache = default!;
-        [Dependency] private readonly IPlacementManager _placementManager = default!;
 
         private readonly IGameHud _gameHud;
         private readonly IConstructionMenuView _constructionView;
@@ -89,7 +87,7 @@ namespace Content.Client.Construction.UI
             _systemManager.SystemLoaded += OnSystemLoaded;
             _systemManager.SystemUnloaded += OnSystemUnloaded;
 
-            _placementManager.PlacementChanged += OnPlacementChanged;
+            // _placementManager.PlacementChanged += OnPlacementChanged;
 
             _constructionView.OnClose += () => _gameHud.CraftingButtonDown = false;
             _constructionView.ClearAllGhosts += (_, _) => _constructionSystem?.ClearAllGhosts();
@@ -99,8 +97,8 @@ namespace Content.Client.Construction.UI
             _constructionView.EraseButtonToggled += (_, b) =>
             {
                 if (_constructionSystem is null) return;
-                if (b) _placementManager.Clear();
-                _placementManager.ToggleEraserHijacked(new ConstructionPlacementHijack(_constructionSystem, null));
+                // if (b) _placementManager.Clear();
+                // _placementManager.ToggleEraserHijacked(new ConstructionPlacementHijack(_constructionSystem, null));
                 _constructionView.EraseButtonPressed = b;
             };
 
@@ -124,7 +122,7 @@ namespace Content.Client.Construction.UI
             _systemManager.SystemLoaded -= OnSystemLoaded;
             _systemManager.SystemUnloaded -= OnSystemUnloaded;
 
-            _placementManager.PlacementChanged -= OnPlacementChanged;
+            // _placementManager.PlacementChanged -= OnPlacementChanged;
 
             _gameHud.CraftingButtonToggled -= OnHudCraftingButtonToggled;
         }
@@ -144,7 +142,7 @@ namespace Content.Client.Construction.UI
             }
 
             _selected = (ConstructionPrototype) item.Metadata!;
-            if (_placementManager.IsActive && !_placementManager.Eraser) UpdateGhostPlacement();
+            // if (_placementManager.IsActive && !_placementManager.Eraser) UpdateGhostPlacement();
             PopulateInfo(_selected);
         }
 
@@ -409,16 +407,20 @@ namespace Content.Client.Construction.UI
                     return;
                 }
 
+                /*
                 _placementManager.BeginPlacing(new PlacementInformation
                 {
                     IsTile = false,
                     PlacementOption = _selected.PlacementMode
                 }, new ConstructionPlacementHijack(_constructionSystem, _selected));
+                */
 
                 UpdateGhostPlacement();
             }
+            /*
             else
                 _placementManager.Clear();
+                */
 
             _constructionView.BuildButtonPressed = pressed;
         }
@@ -429,11 +431,13 @@ namespace Content.Client.Construction.UI
 
             var constructSystem = EntitySystem.Get<ConstructionSystem>();
 
+            /*
             _placementManager.BeginPlacing(new PlacementInformation()
             {
                 IsTile = false,
                 PlacementOption = _selected.PlacementMode,
             }, new ConstructionPlacementHijack(constructSystem, _selected));
+            */
 
             _constructionView.BuildButtonPressed = true;
         }

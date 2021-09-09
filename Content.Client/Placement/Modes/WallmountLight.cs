@@ -1,10 +1,10 @@
-using Robust.Client.Placement;
+// using Robust.Client.Placement;
 using Robust.Shared.Map;
 using Robust.Shared.Maths;
 
 namespace Content.Client.Placement.Modes
 {
-    public class WallmountLight : PlacementMode
+    /*public class WallmountLight : PlacementMode
     {
         public WallmountLight(PlacementManager pMan) : base(pMan)
         {
@@ -58,5 +58,5 @@ namespace Content.Client.Placement.Modes
 
             return true;
         }
-    }
+    }*/
 }

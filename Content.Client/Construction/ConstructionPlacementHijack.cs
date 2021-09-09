@@ -2,13 +2,14 @@
 using Content.Shared.Construction;
 using Content.Shared.Construction.Prototypes;
 using Robust.Client.Graphics;
-using Robust.Client.Placement;
+//using Robust.Client.Placement;
 using Robust.Client.Utility;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 
 namespace Content.Client.Construction
 {
+    /*
     public sealed class ConstructionPlacementHijack : PlacementHijack
     {
         private readonly ConstructionSystem _constructionSystem;
@@ -60,4 +61,5 @@ namespace Content.Client.Construction
             }
         }
     }
+*/
 }

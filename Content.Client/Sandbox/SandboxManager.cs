@@ -8,7 +8,8 @@ using Robust.Client.Console;
 using Robust.Client.Debugging;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
-using Robust.Client.Placement;
+using Robust.Client.Mapping;
+using Robust.Client.Mapping.UserInterface;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
@@ -115,11 +116,11 @@ namespace Content.Client.Sandbox
         [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
         [Dependency] private readonly IGameHud _gameHud = default!;
         [Dependency] private readonly IClientNetManager _netManager = default!;
-        [Dependency] private readonly IPlacementManager _placementManager = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IResourceCache _resourceCache = default!;
         [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
         [Dependency] private readonly IInputManager _inputManager = default!;
+        [Dependency] private readonly IPlacementManager _placementManager = default!;
 
         public bool SandboxAllowed { get; private set; }
 
@@ -293,7 +294,12 @@ namespace Content.Client.Sandbox
         {
             if (_spawnWindow == null)
             {
-                _spawnWindow = new EntitySpawnWindow(_placementManager, _prototypeManager, _resourceCache);
+                _spawnWindow = new EntitySpawnWindow(
+                    EntitySystem.Get<MappingSystem>(),
+                    EntitySystem.Get<PlacementSystem>(),
+                    _prototypeManager,
+                    _resourceCache,
+                    _placementManager);
                 _spawnWindow.OpenToLeft();
                 return;
             }
@@ -312,7 +318,7 @@ namespace Content.Client.Sandbox
         {
             if (_tilesSpawnWindow == null)
             {
-                _tilesSpawnWindow = new TileSpawnWindow(_tileDefinitionManager, _placementManager, _resourceCache);
+                _tilesSpawnWindow = new TileSpawnWindow(_tileDefinitionManager, EntitySystem.Get<MappingSystem>(), _resourceCache);
                 _tilesSpawnWindow.OpenToLeft();
                 return;
             }
