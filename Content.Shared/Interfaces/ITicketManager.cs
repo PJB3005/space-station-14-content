@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using Content.Shared.Administration;
-using Content.Shared.Administration.Tickets;
+﻿using Content.Shared.Administration.Tickets;
 using Robust.Shared.Network;
 
 namespace Content.Shared.Interfaces
@@ -8,6 +6,7 @@ namespace Content.Shared.Interfaces
     public interface ITicketManager
     {
         void Initialize();
+        void PostInitialize();
 
         void CreateTicket(NetUserId opener, NetUserId target, string message);
 

@@ -1,21 +1,13 @@
-﻿using Content.Shared.Chat;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using Lidgren.Network;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Network;
 
-namespace Content.Shared.Administration
+namespace Content.Shared.Administration.Tickets
 {
     [UsedImplicitly]
     public class MsgTicketMessage : NetMessage
     {
-        #region REQUIRED
-
-        public const MsgGroups GROUP = MsgGroups.Command;
-        public const string NAME = nameof(MsgTicketMessage);
-        public MsgTicketMessage(INetChannel channel) : base(NAME, GROUP) { }
-
-        #endregion
+        public override MsgGroups MsgGroup => MsgGroups.Command;
 
         public int Id { get; set; }
         public string Message { get; set; } = string.Empty;

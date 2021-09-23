@@ -1,12 +1,8 @@
 ﻿using System;
-using Content.Server.Eui;
-using Content.Server.Players;
-using Content.Shared.Administration;
+using Content.Server.EUI;
 using Content.Shared.Administration.Tickets;
 using Content.Shared.Eui;
-using Content.Shared.GameObjects.Components.Observer;
 using Content.Shared.Interfaces;
-using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Network;
 

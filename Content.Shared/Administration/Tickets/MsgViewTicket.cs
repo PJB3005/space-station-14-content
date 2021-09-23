@@ -8,11 +8,7 @@ namespace Content.Shared.Administration.Tickets
 {
     public class MsgViewTicket : NetMessage
     {
-        #region REQUIRED
-        public static readonly MsgGroups GROUP = MsgGroups.Core;
-        public static readonly string NAME = nameof(MsgViewTicket);
-        public MsgViewTicket(INetChannel channel) : base(NAME, GROUP) { }
-        #endregion
+        public override MsgGroups MsgGroup => MsgGroups.Command;
 
         public int TicketId { get; set; }
 

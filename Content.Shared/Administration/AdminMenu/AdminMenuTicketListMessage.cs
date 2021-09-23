@@ -8,11 +8,7 @@ namespace Content.Shared.Administration.AdminMenu
 {
     public class AdminMenuTicketListMessage : NetMessage
     {
-        #region REQUIRED
-        public static readonly MsgGroups GROUP = MsgGroups.Command;
-        public static readonly string NAME = nameof(AdminMenuTicketListMessage);
-        public AdminMenuTicketListMessage(INetChannel channel) : base(NAME, GROUP) { }
-        #endregion
+        public override MsgGroups MsgGroup => MsgGroups.Command;
 
         public List<TicketInfo> TicketsInfo = new();
 

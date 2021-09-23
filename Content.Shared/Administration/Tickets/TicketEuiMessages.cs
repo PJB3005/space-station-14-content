@@ -1,6 +1,5 @@
 ﻿using System;
 using Content.Shared.Eui;
-using Content.Shared.GameObjects.Components.Observer.GhostRoles;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
 

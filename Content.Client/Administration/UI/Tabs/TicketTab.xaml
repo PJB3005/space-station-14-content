@@ -1,0 +1,12 @@
+﻿<Control xmlns="https://spacestation14.io">
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer Orientation="Horizontal">
+            <Button Name="RefreshButton" HorizontalExpand="True" SizeFlagsStretchRatio="0.3"
+                    Text="{Loc Refresh}" />
+        </BoxContainer>
+        <Control MinSize="0 5" />
+        <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
+            <BoxContainer Orientation="Vertical" Name="TicketList" />
+        </ScrollContainer>
+    </BoxContainer>
+</Control>

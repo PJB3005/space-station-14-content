@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Content.Client.Interfaces.Chat;
-using Content.Shared.Administration;
+﻿using System.Collections.Generic;
+using Content.Client.Chat.Managers;
 using Content.Shared.Administration.Tickets;
 using Content.Shared.Interfaces;
 using Robust.Client.Player;
@@ -32,8 +30,12 @@ namespace Content.Client.Administration
 
         public void Initialize()
         {
-            _netManager.RegisterNetMessage<MsgTicketMessage>(MsgTicketMessage.NAME, OnTicketMessage);
-            _netManager.RegisterNetMessage<MsgViewTicket>(MsgViewTicket.NAME);
+            _netManager.RegisterNetMessage<MsgTicketMessage>(OnTicketMessage);
+            _netManager.RegisterNetMessage<MsgViewTicket>();
+        }
+
+        public void PostInitialize()
+        {
         }
 
         public void OnTicketMessage(MsgTicketMessage message)
