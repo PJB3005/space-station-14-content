@@ -70,10 +70,7 @@ namespace Content.Server.Singularity.Components
         [ViewVariables(VVAccess.ReadWrite)]
         public bool BeingDeletedByAnotherSingularity { get; set; }
 
-        private IPlayingAudioStream? _playingSound;
-
         [DataField("singularityFormingSound")] private SoundSpecifier _singularityFormingSound = new SoundPathSpecifier("/Audio/Effects/singularity_form.ogg");
-        [DataField("singularitySound")] private SoundSpecifier _singularitySound = new SoundPathSpecifier("/Audio/Effects/singularity.ogg");
         [DataField("singularityCollapsingSound")] private SoundSpecifier _singularityCollapsingSound = new SoundPathSpecifier("/Audio/Effects/singularity_collapse.ogg");
 
         public override ComponentState GetComponentState(ICommonSession player)
@@ -92,16 +89,14 @@ namespace Content.Server.Singularity.Components
             audioParams.MaxDistance = 20f;
             audioParams.Volume = 5;
             SoundSystem.Play(Filter.Pvs(Owner), _singularityFormingSound.GetSound(), Owner);
-            Timer.Spawn(5200, () => _playingSound = SoundSystem.Play(Filter.Pvs(Owner), _singularitySound.GetSound(), Owner, audioParams));
 
             _singularitySystem.ChangeSingularityLevel(this, 1);
         }
 
-        protected override void OnRemove()
+        protected override void Shutdown()
         {
-            _playingSound?.Stop();
+            base.Shutdown();
             SoundSystem.Play(Filter.Pvs(Owner), _singularityCollapsingSound.GetSound(), Owner.Transform.Coordinates);
-            base.OnRemove();
         }
     }
 }

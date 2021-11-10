@@ -23,7 +23,8 @@
       - Impassable
       - MobImpassable
       - VaultImpassable
-  - type: SnapGrid
+  - type: Transform
+    anchored: true
   - type: Sprite
     sprite: Structures/Power/Generation/Singularity/emitter.rsi
     layers:
@@ -44,7 +45,8 @@
         !type:CableDeviceNode
         nodeGroupID: MVPower
   - type: Damageable
-    resistances: metallicResistances
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
       - trigger:
@@ -67,5 +69,7 @@
   - type: Appearance
     visuals:
     - type: EmitterVisualizer
+  - type: Lock
+    locked: false
   - type: AccessReader
     access: [[ "Engineering" ]]

@@ -8,6 +8,28 @@ namespace Content.Shared.CCVar
     public sealed class CCVars : CVars
     {
         /*
+         * Ambience
+         */
+
+        /// <summary>
+        ///     Whether the basic 'hum' ambience will be enabled.
+        /// </summary>
+        public static readonly CVarDef<bool> AmbienceBasicEnabled =
+            CVarDef.Create("ambience.basic_enabled", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+        /// <summary>
+        /// How long we'll wait until re-sampling nearby objects for ambience.
+        /// </summary>
+        public static readonly CVarDef<float> AmbientCooldown =
+            CVarDef.Create("ambience.cooldown", 0.5f, CVar.REPLICATED | CVar.SERVER);
+
+        public static readonly CVarDef<float> AmbientRange =
+            CVarDef.Create("ambience.range", 5f, CVar.REPLICATED | CVar.SERVER);
+
+        public static readonly CVarDef<int> MaxAmbientSources =
+            CVarDef.Create("ambience.max_sounds", 6, CVar.REPLICATED | CVar.SERVER);
+
+        /*
          * Status
          */
 
@@ -69,13 +91,22 @@ namespace Content.Shared.CCVar
             CVarDef.Create("game.maxstationoffset", 1000.0f);
 
         /// <summary>
+        ///     Whether a random rotation will be applied to the station on roundstart.
+        /// </summary>
+        public static readonly CVarDef<bool> StationRotation =
+            CVarDef.Create("game.station_rotation", true);
+
+        /// <summary>
         ///     When enabled, guests will be assigned permanent UIDs and will have their preferences stored.
         /// </summary>
-        public static readonly CVarDef<bool>
-            GamePersistGuests = CVarDef.Create("game.persistguests", true, CVar.ARCHIVE | CVar.SERVERONLY);
+        public static readonly CVarDef<bool> GamePersistGuests =
+            CVarDef.Create("game.persistguests", true, CVar.ARCHIVE | CVar.SERVERONLY);
 
         public static readonly CVarDef<bool> GameDiagonalMovement =
             CVarDef.Create("game.diagonalmovement", true, CVar.ARCHIVE);
+
+        public static readonly CVarDef<int> SoftMaxPlayers =
+            CVarDef.Create("game.soft_max_players", 30, CVar.SERVERONLY | CVar.ARCHIVE);
 
         /*
          * Suspicion
@@ -210,13 +241,6 @@ namespace Content.Shared.CCVar
             CVarDef.Create("physics.mob_pushing", true, CVar.REPLICATED);
 
         /*
-         * Ambience
-         */
-
-        public static readonly CVarDef<bool> AmbienceBasicEnabled =
-            CVarDef.Create("ambience.basicenabled", true, CVar.ARCHIVE | CVar.CLIENTONLY);
-
-        /*
          * Lobby music
          */
 
@@ -229,6 +253,13 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<int> HudTheme =
             CVarDef.Create("hud.theme", 0, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+        public static readonly CVarDef<bool> HudHeldItemShow =
+            CVarDef.Create("hud.held_item_show", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+        public static readonly CVarDef<float> HudHeldItemOffset =
+            CVarDef.Create("hud.held_item_offset", 28f, CVar.ARCHIVE | CVar.CLIENTONLY);
+
 
         /*
          * AI
@@ -376,9 +407,9 @@ namespace Content.Shared.CCVar
             CVarDef.Create("ooc.enabled_admin", true, CVar.NOTIFY);
 
         /*
-         * Context Menu Grouping Types
+         * Entity Menu Grouping Types
          */
-        public static readonly CVarDef<int> ContextMenuGroupingType = CVarDef.Create("context_menu", 0, CVar.CLIENTONLY);
+        public static readonly CVarDef<int> EntityMenuGroupingType = CVarDef.Create("entity_menu", 0, CVar.CLIENTONLY);
 
         /*
          * VOTE
@@ -401,7 +432,7 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<bool> BanHardwareIds =
-            CVarDef.Create("ban.hardware_ids", false, CVar.SERVERONLY);
+            CVarDef.Create("ban.hardware_ids", true, CVar.SERVERONLY);
 
         /*
          * Shuttles
@@ -422,10 +453,10 @@ namespace Content.Shared.CCVar
 
         // This default is basically specifically chosen so fullscreen/maximized 1080p hits a 2x snap and does NN.
         public static readonly CVarDef<int> ViewportSnapToleranceMargin =
-            CVarDef.Create("viewport.snap_tolerance_margin", 64, CVar.CLIENTONLY);
+            CVarDef.Create("viewport.snap_tolerance_margin", 64, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         public static readonly CVarDef<int> ViewportSnapToleranceClip =
-            CVarDef.Create("viewport.snap_tolerance_clip", 32, CVar.CLIENTONLY);
+            CVarDef.Create("viewport.snap_tolerance_clip", 32, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         public static readonly CVarDef<bool> ViewportScaleRender =
             CVarDef.Create("viewport.scale_render", true, CVar.CLIENTONLY | CVar.ARCHIVE);
@@ -446,5 +477,15 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float> AfkTime =
             CVarDef.Create("afk.time", 60f, CVar.SERVERONLY);
+
+        /*
+         * IC
+         */
+
+        /// <summary>
+        /// Restricts IC character names to alphanumeric chars.
+        /// </summary>
+        public static readonly CVarDef<bool> RestrictedNames =
+            CVarDef.Create("ic.restricted_names", true, CVar.SERVER | CVar.REPLICATED);
     }
 }

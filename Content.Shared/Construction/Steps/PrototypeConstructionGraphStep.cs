@@ -1,7 +1,7 @@
-﻿using Robust.Shared.GameObjects;
+﻿using Content.Shared.Examine;
+using Robust.Shared.GameObjects;
 using Robust.Shared.Localization;
 using Robust.Shared.Serialization.Manager.Attributes;
-using Robust.Shared.Utility;
 
 namespace Content.Shared.Construction.Steps
 {
@@ -10,14 +10,14 @@ namespace Content.Shared.Construction.Steps
     {
         [DataField("prototype")] public string Prototype { get; } = string.Empty;
 
-        public override bool EntityValid(IEntity entity)
+        public override bool EntityValid(EntityUid uid, IEntityManager entityManager)
         {
-            return entity.Prototype?.ID == Prototype;
+            return entityManager.GetComponent<MetaDataComponent>(uid).EntityPrototype?.ID == Prototype;
         }
 
-        public override void DoExamine(FormattedMessage message, bool inDetailsRange)
+        public override void DoExamine(ExaminedEvent examinedEvent)
         {
-            message.AddMarkup(string.IsNullOrEmpty(Name)
+            examinedEvent.Message.AddMarkup(string.IsNullOrEmpty(Name)
                 ? Loc.GetString(
                     "construction-insert-prototype-no-name",
                     ("prototypeName", Prototype) // Terrible.

@@ -1,8 +1,9 @@
+using System;
 using Content.Server.Power.Components;
 using Content.Server.UserInterface;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Interaction;
-using Content.Shared.Notification.Managers;
+using Content.Shared.Popups;
 using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Localization;
@@ -63,7 +64,7 @@ namespace Content.Server.GameObjects.Components
                 return; // Not powered, so this computer should probably do nothing.
             }
             // Can we interact?
-            if (!EntitySystem.Get<ActionBlockerSystem>().CanInteract(sessionEntity))
+            if (!EntitySystem.Get<ActionBlockerSystem>().CanInteract(sessionEntity.Uid))
             {
                 sessionEntity.PopupMessageCursor(Loc.GetString("base-computer-ui-component-cannot-interact"));
                 return;
@@ -82,9 +83,12 @@ namespace Content.Server.GameObjects.Components
             // Nothing!
         }
 
+        [Obsolete("Component Messages are deprecated, use Entity Events instead.")]
         public override void HandleMessage(ComponentMessage message, IComponent? component)
         {
+#pragma warning disable 618
             base.HandleMessage(message, component);
+#pragma warning restore 618
             switch (message)
             {
                 case PowerChangedMessage powerChanged:

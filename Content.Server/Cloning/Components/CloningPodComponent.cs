@@ -1,13 +1,12 @@
 using System;
-using Content.Server.CharacterAppearance.Components;
 using Content.Server.EUI;
 using Content.Server.Mind.Components;
 using Content.Server.Power.Components;
 using Content.Server.UserInterface;
+using Content.Shared.CharacterAppearance.Systems;
 using Content.Shared.Cloning;
-using Content.Shared.MobState;
-using Content.Shared.Notification;
-using Content.Shared.Notification.Managers;
+using Content.Shared.MobState.Components;
+using Content.Shared.Popups;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Containers;
@@ -108,7 +107,7 @@ namespace Content.Server.Cloning.Components
                     if (cloningSystem.ClonesWaitingForMind.TryGetValue(mind, out var cloneUid))
                     {
                         if (Owner.EntityManager.TryGetEntity(cloneUid, out var clone) &&
-                            clone.TryGetComponent<IMobStateComponent>(out var cloneState) &&
+                            clone.TryGetComponent<MobStateComponent>(out var cloneState) &&
                             !cloneState.IsDead() &&
                             clone.TryGetComponent(out MindComponent? cloneMindComp) &&
                             (cloneMindComp.Mind == null || cloneMindComp.Mind == mind))
@@ -121,7 +120,7 @@ namespace Content.Server.Cloning.Components
                     }
 
                     if (mind.OwnedEntity != null &&
-                        mind.OwnedEntity.TryGetComponent<IMobStateComponent>(out var state) &&
+                        mind.OwnedEntity.TryGetComponent<MobStateComponent>(out var state) &&
                         !state.IsDead())
                     {
                         obj.Session.AttachedEntity?.PopupMessageCursor(Loc.GetString("cloning-pod-component-msg-already-alive"));
@@ -135,9 +134,10 @@ namespace Content.Server.Cloning.Components
                         return; // If we can't track down the client, we can't offer transfer. That'd be quite bad.
                     }
 
-                    var mob = Owner.EntityManager.SpawnEntity("HumanMob_Content", Owner.Transform.MapPosition);
+                    var mob = Owner.EntityManager.SpawnEntity("MobHuman", Owner.Transform.MapPosition);
 
-                    mob.GetComponent<HumanoidAppearanceComponent>().UpdateFromProfile(dna.Profile);
+
+                    EntitySystem.Get<SharedHumanoidAppearanceSystem>().UpdateFromProfile(mob.Uid, dna.Profile);
                     mob.Name = dna.Profile.Name;
 
                     var cloneMindReturn = mob.AddComponent<BeingClonedComponent>();

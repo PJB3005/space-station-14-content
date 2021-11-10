@@ -1,10 +1,9 @@
 using System;
 using System.Threading;
 using Content.Server.Chat.Managers;
-using Content.Shared;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;
-using Content.Shared.MobState;
+using Content.Shared.MobState.Components;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
@@ -34,7 +33,7 @@ namespace Content.Server.GameTicking.Rules
         {
             _chatManager.DispatchServerAnnouncement(Loc.GetString("rule-death-match-added-announcement"));
 
-            _entityManager.EventBus.SubscribeEvent<DamageChangedEventArgs>(EventSource.Local, this, OnHealthChanged);
+            _entityManager.EventBus.SubscribeEvent<DamageChangedEvent>(EventSource.Local, this, OnHealthChanged);
             _playerManager.PlayerStatusChanged += PlayerManagerOnPlayerStatusChanged;
         }
 
@@ -42,11 +41,11 @@ namespace Content.Server.GameTicking.Rules
         {
             base.Removed();
 
-            _entityManager.EventBus.UnsubscribeEvent<DamageChangedEventArgs>(EventSource.Local, this);
+            _entityManager.EventBus.UnsubscribeEvent<DamageChangedEvent>(EventSource.Local, this);
             _playerManager.PlayerStatusChanged -= PlayerManagerOnPlayerStatusChanged;
         }
 
-        private void OnHealthChanged(DamageChangedEventArgs message)
+        private void OnHealthChanged(DamageChangedEvent _)
         {
             _runDelayedCheck();
         }
@@ -63,7 +62,7 @@ namespace Content.Server.GameTicking.Rules
             {
                 var playerEntity = playerSession.AttachedEntity;
                 if (playerEntity == null
-                    || !playerEntity.TryGetComponent(out IMobStateComponent? state))
+                    || !playerEntity.TryGetComponent(out MobStateComponent? state))
                 {
                     continue;
                 }

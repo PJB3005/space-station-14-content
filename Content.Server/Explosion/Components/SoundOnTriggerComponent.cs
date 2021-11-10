@@ -1,3 +1,4 @@
+using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Sound;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization.Manager.Attributes;
@@ -14,7 +15,7 @@ namespace Content.Server.Explosion.Components
         public override string Name => "SoundOnTrigger";
 
         [ViewVariables(VVAccess.ReadWrite)]
-        [DataField("sound", required: true)]
-        public SoundSpecifier Sound { get; set; } = default!;
+        [DataField("sound")]
+        public SoundSpecifier? Sound { get; set; }
     }
 }

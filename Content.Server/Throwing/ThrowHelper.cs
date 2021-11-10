@@ -1,7 +1,7 @@
 using System;
 using Content.Server.Interaction;
 using Content.Server.Items;
-using Content.Shared.MobState;
+using Content.Shared.MobState.Components;
 using Content.Shared.Tag;
 using Content.Shared.Throwing;
 using Robust.Shared.GameObjects;
@@ -46,15 +46,16 @@ namespace Content.Server.Throwing
                 return;
             }
 
-            if (entity.HasComponent<IMobStateComponent>())
+            if (entity.HasComponent<MobStateComponent>())
             {
                 Logger.Warning("Throwing not supported for mobs!");
                 return;
             }
 
+            var comp = entity.EnsureComponent<ThrownItemComponent>();
             if (entity.HasComponent<ItemComponent>())
             {
-                entity.EnsureComponent<ThrownItemComponent>().Thrower = user;
+                comp.Thrower = user;
                 // Give it a l'il spin.
                 if (!entity.HasTag("NoSpinOnThrow"))
                 {
@@ -71,7 +72,7 @@ namespace Content.Server.Throwing
 
             var impulseVector = direction.Normalized * strength * physicsComponent.Mass;
             physicsComponent.ApplyLinearImpulse(impulseVector);
-            
+
             // Estimate time to arrival so we can apply OnGround status and slow it much faster.
             var time = (direction / strength).Length;
 
@@ -87,6 +88,7 @@ namespace Content.Server.Throwing
                 {
                     if (physicsComponent.Deleted) return;
                     physicsComponent.BodyStatus = BodyStatus.OnGround;
+                    EntitySystem.Get<ThrownItemSystem>().LandComponent(comp);
                 });
             }
 

@@ -6,6 +6,10 @@
   placement:
     mode: AlignTileAny
   components:
+  - type: AmbientSound
+    range: 7
+    sound:
+      path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
   - type: Sprite
     netsync: false
     sprite: Structures/Machines/gravity_generator.rsi
@@ -16,9 +20,10 @@
         state: activated
         shader: unshaded
         map: ["enum.GravityGeneratorVisualLayers.Core"]
-  - type: SnapGrid
+  - type: Transform
+    anchored: true
   - type: ApcPowerReceiver
-    powerLoad: 500
+  - type: ExtensionCableReceiver
   - type: Physics
     bodyType: Static
     fixtures:
@@ -45,6 +50,10 @@
       - !type:DoActsBehavior
         acts: ["Breakage"]
   - type: GravityGenerator
+    idlePower: 15
+    activePower: 500
+    lightRadiusMin: 0.75
+    lightRadiusMax: 2.5
   - type: UserInterface
     interfaces:
       - key: enum.GravityGeneratorUiKey.Key
@@ -57,3 +66,8 @@
         unpowered: "off"
         off: "off"
         on: "on"
+  - type: PointLight
+    energy: 0.5
+    # Gravity generator is a large machine, not casting shadows is fine within the radius set above.
+    castShadows: false
+    color: "#a8ffd9"

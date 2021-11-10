@@ -7,7 +7,6 @@
   - type: InteractionOutline
   - type: Sprite
     netsync: false
-    drawdepth: Mobs
     sprite: Structures/Doors/Airlocks/Standard/basic.rsi
     state: "assembly"
   - type: Physics
@@ -23,9 +22,11 @@
       - VaultImpassable
   - type: Anchorable
   - type: Pullable
-  - type: SnapGrid
+  - type: Transform
+    anchored: true
   - type: Damageable
-    resistances: metallicResistances
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
     - trigger:

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: Smoke
   name: smoke
   abstract: true
@@ -11,7 +11,8 @@
     visuals:
       - type: SmokeVisualizer
   - type: Occluder
-  - type: SnapGrid
+  - type: Transform
+    anchored: true
   - type: SmokeSolutionAreaEffect
   - type: SolutionContainerManager
     solutions:
@@ -38,7 +39,8 @@
       - type: FoamVisualizer
         animationTime: 0.6
         animationState: foam-dissolve
-  - type: SnapGrid
+  - type: Transform
+    anchored: true
   - type: Physics
     fixtures:
     - shape:
@@ -100,7 +102,9 @@
     snap:
       - Wall
   components:
-  - type: RCDDeconstructWhitelist
+  - type: Tag
+    tags:
+      - RCDDeconstructWhitelist
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
@@ -119,10 +123,12 @@
   - type: Occluder
     sizeX: 32
     sizeY: 32
-  - type: SnapGrid
+  - type: Transform
+    anchored: true
   - type: Airtight
   - type: Damageable
-    resistances: metallicResistances
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
     - trigger:

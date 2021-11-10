@@ -13,7 +13,7 @@ using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Inventory;
-using Content.Shared.Notification.Managers;
+using Content.Shared.Popups;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -40,6 +40,7 @@ namespace Content.Server.Chat.Managers
             { "revolutionary", "#aa00ff" }
         };
 
+        [Dependency] private readonly IEntityManager _entManager = default!;
         [Dependency] private readonly IServerNetManager _netManager = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IMoMMILink _mommiLink = default!;
@@ -109,7 +110,7 @@ namespace Content.Server.Chat.Managers
 
         public void EntitySay(IEntity source, string message)
         {
-            if (!EntitySystem.Get<ActionBlockerSystem>().CanSpeak(source))
+            if (!EntitySystem.Get<ActionBlockerSystem>().CanSpeak(source.Uid))
             {
                 return;
             }
@@ -128,17 +129,29 @@ namespace Content.Server.Chat.Managers
             foreach (var handler in _chatTransformHandlers)
             {
                 //TODO: rather return a bool and use a out var?
-                message = handler(source, message);
+                message = handler(source.Uid, message);
             }
 
             message = message.Trim();
 
-            var mapPos = source.Transform.MapPosition;
+            // We'll try to avoid using MapPosition as EntityCoordinates can early-out and potentially be faster for common use cases
+            // Downside is it may potentially convert to MapPosition unnecessarily.
+            var sourceMapId = source.Transform.MapID;
+            var sourceCoords = source.Transform.Coordinates;
 
-            var clients = _playerManager.GetPlayersBy((x) => x.AttachedEntity != null
-                    && (x.AttachedEntity.HasComponent<GhostComponent>()
-                    || mapPos.InRange(x.AttachedEntity.Transform.MapPosition, VoiceRange)))
-                .Select(p => p.ConnectedClient).ToList();
+            var clients = new List<INetChannel>();
+
+            foreach (var player in _playerManager.GetAllPlayers())
+            {
+                if (player.AttachedEntity == null) continue;
+                var transform = player.AttachedEntity.Transform;
+
+                if (transform.MapID != sourceMapId ||
+                    !player.AttachedEntity.HasComponent<GhostComponent>() &&
+                    !sourceCoords.InRange(_entManager, transform.Coordinates, VoiceRange)) continue;
+
+                clients.Add(player.ConnectedClient);
+            }
 
             if (message.StartsWith(';'))
             {
@@ -182,7 +195,7 @@ namespace Content.Server.Chat.Managers
 
         public void EntityMe(IEntity source, string action)
         {
-            if (!EntitySystem.Get<ActionBlockerSystem>().CanEmote(source))
+            if (!EntitySystem.Get<ActionBlockerSystem>().CanEmote(source.Uid))
             {
                 return;
             }
@@ -362,6 +375,7 @@ namespace Content.Server.Chat.Managers
 
         public void RegisterChatTransform(TransformChat handler)
         {
+            // TODO: Literally just make this an event...
             _chatTransformHandlers.Add(handler);
         }
     }

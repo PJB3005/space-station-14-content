@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Content.Server.Alert;
 using Content.Shared.Alert;
 using Content.Shared.Damage;
-using Content.Shared.Damage.Components;
-using Content.Shared.MobState;
+using Content.Shared.MobState.Components;
 using Content.Shared.Movement.Components;
+using Content.Shared.Movement.EntitySystems;
 using Content.Shared.Nutrition.Components;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
@@ -14,7 +14,6 @@ using Robust.Shared.Players;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization.Manager.Attributes;
 using Robust.Shared.ViewVariables;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Nutrition.Components
 {
@@ -23,9 +22,7 @@ namespace Content.Server.Nutrition.Components
     {
         [Dependency] private readonly IRobustRandom _random = default!;
 
-        // TODO DAMAGE UNITS When damage units support decimals, get rid of this.
-        // See also _accumulatedDamage in HungerComponent and HealthChange.
-        private float _accumulatedDamage;
+        private float _accumulatedFrameTime;
 
         // Base stuff
         [ViewVariables(VVAccess.ReadWrite)]
@@ -77,17 +74,9 @@ namespace Content.Server.Nutrition.Components
             {ThirstThreshold.Parched, AlertType.Parched},
         };
 
-        // TODO PROTOTYPE Replace this datafield variable with prototype references, once they are supported.
-        // Also remove Initialize override, if no longer needed.
-        [DataField("damageType")]
-        private readonly string _damageTypeID = "Blunt";
+        [DataField("damage", required: true)]
         [ViewVariables(VVAccess.ReadWrite)]
-        public DamageTypePrototype DamageType = default!;
-        protected override void Initialize()
-        {
-            base.Initialize();
-            DamageType = IoCManager.Resolve<IPrototypeManager>().Index<DamageTypePrototype>(_damageTypeID);
-        }
+        public DamageSpecifier Damage = default!;
 
         public void ThirstThresholdEffect(bool force = false)
         {
@@ -97,7 +86,7 @@ namespace Content.Server.Nutrition.Components
                 if (_lastThirstThreshold == ThirstThreshold.Parched && _currentThirstThreshold != ThirstThreshold.Dead &&
                     Owner.TryGetComponent(out MovementSpeedModifierComponent? movementSlowdownComponent))
                 {
-                    movementSlowdownComponent.RefreshMovementSpeedModifiers();
+                    EntitySystem.Get<MovementSpeedModifierSystem>().RefreshMovementSpeedModifiers(OwnerUid);
                 }
 
                 // Update UI
@@ -131,10 +120,7 @@ namespace Content.Server.Nutrition.Components
                         return;
 
                     case ThirstThreshold.Parched:
-                        if (Owner.TryGetComponent(out MovementSpeedModifierComponent? movementSlowdownComponent1))
-                        {
-                            movementSlowdownComponent1.RefreshMovementSpeedModifiers();
-                        }
+                        EntitySystem.Get<MovementSpeedModifierSystem>().RefreshMovementSpeedModifiers(OwnerUid);
                         _lastThirstThreshold = _currentThirstThreshold;
                         _actualDecayRate = _baseDecayRate * 0.6f;
                         return;
@@ -193,22 +179,17 @@ namespace Content.Server.Nutrition.Components
                 return;
             // --> Current Hunger is below dead threshold
 
-            if (!Owner.TryGetComponent(out IDamageableComponent? damageable))
-                return;
-
-            if (!Owner.TryGetComponent(out IMobStateComponent? mobState))
+            if (!Owner.TryGetComponent(out MobStateComponent? mobState))
                 return;
 
             if (!mobState.IsDead())
             {
                 // --> But they are not dead yet.
-                var damage = 2 * frametime;
-                _accumulatedDamage += damage - ((int) damage);
-                damageable.TryChangeDamage(DamageType, (int) damage);
-                if (_accumulatedDamage >= 1)
+                _accumulatedFrameTime += frametime;
+                if (_accumulatedFrameTime >= 1)
                 {
-                    _accumulatedDamage -= 1;
-                    damageable.TryChangeDamage(DamageType, 1, true);
+                    EntitySystem.Get<DamageableSystem>().TryChangeDamage(Owner.Uid, Damage * (int) _accumulatedFrameTime, true);
+                    _accumulatedFrameTime -= (int) _accumulatedFrameTime;
                 }
             }
         }

@@ -2,8 +2,7 @@ using Content.Server.Hands.Components;
 using Content.Server.Items;
 using Content.Shared.Acts;
 using Content.Shared.Item;
-using Content.Shared.Notification;
-using Content.Shared.Notification.Managers;
+using Content.Shared.Popups;
 using Robust.Shared.Containers;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Localization;
@@ -60,7 +59,7 @@ namespace Content.Server.Storage.Components
                 return false;
             }
 
-            if (!user.TryGetComponent(out IHandsComponent? hands))
+            if (!user.TryGetComponent(out HandsComponent? hands))
                 return false;
 
             if (!hands.Drop(itemToHide, _itemContainer))
