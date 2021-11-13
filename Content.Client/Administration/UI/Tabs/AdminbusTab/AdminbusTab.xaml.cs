@@ -28,23 +28,21 @@ namespace Content.Client.Administration.UI.Tabs.AdminbusTab
 
         private void SpawnEntitiesButtonOnOnPressed(BaseButton.ButtonEventArgs obj)
         {
-            var manager = IoCManager.Resolve<IAdminMenuManager>();
             _entitySpawnWindow ??= new EntitySpawnWindow(
                 EntitySystem.Get<MappingSystem>(),
                 EntitySystem.Get<PlacementSystem>(),
                 IoCManager.Resolve<IPrototypeManager>(),
                 IoCManager.Resolve<IResourceCache>(),
                 IoCManager.Resolve<IPlacementManager>());
-            manager.OpenCommand(_entitySpawnWindow);
+            EntitySystem.Get<AdminSystem>().OpenCommand(_entitySpawnWindow);
         }
 
         private void SpawnTilesButtonOnOnPressed(BaseButton.ButtonEventArgs obj)
         {
-            var manager = IoCManager.Resolve<IAdminMenuManager>();
             _tileSpawnWindow ??= new TileSpawnWindow(IoCManager.Resolve<ITileDefinitionManager>(),
                 EntitySystem.Get<MappingSystem>(),
                 IoCManager.Resolve<IResourceCache>());
-            manager.OpenCommand(_tileSpawnWindow);
+            EntitySystem.Get<AdminSystem>().OpenCommand(_tileSpawnWindow);
         }
     }
 }
