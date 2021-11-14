@@ -53,24 +53,6 @@ namespace Content.Server.Sandbox
 
             _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
             _entityManager.EventBus.SubscribeEvent<GameRunLevelChangedEvent>(EventSource.Local, this, GameTickerOnOnRunLevelChanged);
-
-            /*_placementManager.AllowPlacementFunc = placement =>
-            {
-                if (IsSandboxEnabled)
-                {
-                    return true;
-                }
-
-                var channel = placement.MsgChannel;
-                var player = _playerManager.GetSessionByChannel(channel);
-
-                if (_conGroupController.CanAdminPlace(player))
-                {
-                    return true;
-                }
-
-                return false;
-            };*/
         }
 
         private void GameTickerOnOnRunLevelChanged(GameRunLevelChangedEvent obj)
