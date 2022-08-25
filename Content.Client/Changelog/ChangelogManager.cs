@@ -1,16 +1,11 @@
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
-using Robust.Shared.IoC;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.Manager;
-using Robust.Shared.Serialization.Manager.Attributes;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Serialization.Markdown.Mapping;
 using Robust.Shared.Utility;
@@ -75,12 +70,13 @@ namespace Content.Client.Changelog
         {
             return Task.Run(() =>
             {
-                var yamlData = _resource.ContentFileReadYaml(new ResourcePath("/Changelog/Changelog.yml"));
+                var yamlData = _resource.ContentFileReadText(new ResourcePath("/Changelog/Changelog.yml"));
+                var documents = DataNodeParser.ParseYamlStream(yamlData).ToArray();
 
-                if (yamlData.Documents.Count == 0)
+                if (documents.Length == 0)
                     return new List<ChangelogEntry>();
 
-                var node = (MappingDataNode)yamlData.Documents[0].RootNode.ToDataNode();
+                var node = (MappingDataNode)documents[0].Root;
                 return _serialization.Read<List<ChangelogEntry>>(node["Entries"]);
             });
         }
