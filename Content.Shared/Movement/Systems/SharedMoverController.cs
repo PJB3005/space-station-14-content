@@ -30,6 +30,7 @@ namespace Content.Shared.Movement.Systems
     {
         [Dependency] private readonly IConfigurationManager _configManager = default!;
         [Dependency] protected readonly IGameTiming Timing = default!;
+        [Dependency] protected readonly SharedPhysicsSystem Physics = default!;
         [Dependency] private readonly IMapManager _mapManager = default!;
         [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
         [Dependency] private readonly InventorySystem _inventory = default!;
@@ -108,25 +109,19 @@ namespace Content.Shared.Movement.Systems
             EntityQuery<MovementSpeedModifierComponent> modifierQuery)
         {
             var canMove = mover.CanMove;
-            if (relayTargetQuery.TryGetComponent(uid, out var relayTarget) && relayTarget.Entities.Count > 0)
+            if (relayTargetQuery.TryGetComponent(uid, out var relayTarget))
             {
-                DebugTools.Assert(relayTarget.Entities.Count <= 1, "Multiple relayed movers are not supported at the moment");
-
-                var found = false;
-                foreach (var ent in relayTarget.Entities)
+                if (_mobState.IsIncapacitated(relayTarget.Source) ||
+                    !moverQuery.TryGetComponent(relayTarget.Source, out var relayedMover))
                 {
-                    if (_mobState.IsIncapacitated(ent) || !moverQuery.TryGetComponent(ent, out var relayedMover))
-                        continue;
-
-                    found = true;
+                    canMove = false;
+                }
+                else
+                {
                     mover.RelativeEntity = relayedMover.RelativeEntity;
                     mover.RelativeRotation = relayedMover.RelativeRotation;
                     mover.TargetRelativeRotation = relayedMover.TargetRelativeRotation;
-                    break;
                 }
-
-                // lets just hope that this is the same entity that set the movement keys/direction.
-                canMove &= found;
             }
 
             // Update relative movement
@@ -190,8 +185,8 @@ namespace Content.Shared.Movement.Systems
 
                 if (!touching)
                 {
-                    var ev = new CanWeightlessMoveEvent();
-                    RaiseLocalEvent(uid, ref ev);
+                    var ev = new CanWeightlessMoveEvent(uid);
+                    RaiseLocalEvent(uid, ref ev, true);
                     // No gravity: is our entity touching anything?
                     touching = ev.CanMove;
 
@@ -258,19 +253,16 @@ namespace Content.Shared.Movement.Systems
                 if (!weightless && mobMoverQuery.TryGetComponent(uid, out var mobMover) &&
                     TryGetSound(weightless, uid, mover, mobMover, xform, out var sound))
                 {
-                    var soundModifier = mover.Sprinting ? 1.5f : 1f;
+                    var soundModifier = mover.Sprinting ? 3.5f : 1.5f;
 
                     var audioParams = sound.Params
-                        .WithVolume(sound.Params.Volume * soundModifier)
+                        .WithVolume(sound.Params.Volume + soundModifier)
                         .WithVariation(sound.Params.Variation ?? FootstepVariation);
 
                     // If we're a relay target then predict the sound for all relays.
                     if (relayTarget != null)
                     {
-                        foreach (var ent in relayTarget.Entities)
-                        {
-                            _audio.PlayPredicted(sound, uid, ent, audioParams);
-                        }
+                        _audio.PlayPredicted(sound, uid, relayTarget.Source, audioParams);
                     }
                     else
                     {
