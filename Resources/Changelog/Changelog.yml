@@ -1,10 +1,4 @@
 ﻿Entries:
-- author: Slava0135
-  changes:
-  - message: Disposal traversal damage is disabled for now.
-    type: Tweak
-  id: 5193
-  time: '2023-11-19T10:25:02.0000000+00:00'
 - author: deltanedas
   changes:
   - message: Fixed explosions deleting bodyparts and organs inside of people.
@@ -3717,5 +3711,12 @@
   - message: Added fun!
     type: Add
   id: 5693
+  time: '2024-01-13T23:22:20.0000000+00:00'
+  url: https://api.github.com/repos/PJB3005/space-station-14-content/pulls/3
+- author: PJB3005
+  changes:
+  - message: Added fun!
+    type: Add
+  id: 5694
   time: '2024-01-13T23:22:20.0000000+00:00'
   url: https://api.github.com/repos/PJB3005/space-station-14-content/pulls/3
