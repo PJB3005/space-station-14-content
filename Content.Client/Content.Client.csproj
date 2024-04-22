@@ -11,10 +11,17 @@
     <Nullable>enable</Nullable>
     <Configurations>Debug;Release;Tools;DebugOpt</Configurations>
     <Platforms>AnyCPU</Platforms>
+
+    <PublishTrimmed>true</PublishTrimmed>
+    <SelfContained>true</SelfContained>
+    <MSBuildEnableWorkloadResolver>false</MSBuildEnableWorkloadResolver>
   </PropertyGroup>
   <ItemGroup>
+    <IlcArg  Include="--codegenopt:JitCheckLlvmIR=1" />
     <PackageReference Include="Nett" />
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.DotNet.ILCompiler.LLVM" />
+    <PackageReference Include="runtime.win-x64.Microsoft.DotNet.ILCompiler.LLVM" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RobustToolbox\Lidgren.Network\Lidgren.Network.csproj" />
