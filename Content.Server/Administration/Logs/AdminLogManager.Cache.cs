@@ -29,11 +29,11 @@ public sealed partial class AdminLogManager
     public void CacheNewRound()
     {
         List<SharedAdminLog> list;
-        var oldestRound = _currentRoundId - MaxRoundsCached;
 
-        if (_roundsLogCache.Remove(oldestRound, out var oldestList))
+        if (_roundsLogCache.Count >= MaxRoundsCached)
         {
-            list = oldestList;
+            var oldest = _roundsLogCache.Keys.Min();
+            _roundsLogCache.Remove(oldest, out list!);
             list.Clear();
         }
         else
